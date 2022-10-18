@@ -13,7 +13,8 @@
 
 #include <stdio.h>
 
-int main(){
+int main()
+{
     // 初始化
     int price = 0;
     int bill = 0;
