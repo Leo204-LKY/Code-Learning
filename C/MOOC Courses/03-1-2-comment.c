@@ -28,4 +28,6 @@ int main()
     if ( bill >= price ) {
         printf("应该找您：%d\n", bill - price);
     }
+
+    return 0;
 }
