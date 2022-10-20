@@ -2,5 +2,5 @@
 *.uvgui.*
 *.uvopt
 
-/Objects
-/Listings
+Objects/
+Listings/
