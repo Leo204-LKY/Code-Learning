@@ -64,7 +64,6 @@ void Delay500ms()		//@12.000MHz
 	} while (--i);
 }
 
-
 void main()
 {
 	while(1)
@@ -89,6 +88,9 @@ void main()
 | 5 | 0101 | 0x05 | 13 | 1101 | 0x0D |  
 | 6 | 0110 | 0x06 | 14 | 1110 | 0x0E |  
 | 7 | 0111 | 0x07 | 15 | 1111 | 0x0F |  
+<details>
+<summary>代码</summary>
+<pre>
 
 ```C
 #include <REGX52.H>
@@ -132,9 +134,102 @@ void main()
 		P2 = 0x7F;       // 0111 1111
 		Delay500ms();
 	}
-	
 }
 ```
+</pre></details>
+
+### 2-4 LED 流水灯 Plus  
+假设我们需要改变延时，让流水灯“流动”的速度更快(例如改为 `300 ms` )，那么就需要在 STC-ISP 中生成新的代码，但是每次改变延时都需要重新生成，那应该如何优化呢  
+首先需要获得延时 1ms 的代码：  
+```C
+#include <INTRINS.H>
+
+void Delay1ms()		//@12.000MHz
+{
+	unsigned char i, j;
+
+	i = 2;
+	j = 239;
+	do
+	{
+		while (--j);
+	} while (--i);
+}
+```
+其中 `Delay1ms()` 为函数名，后方的括号中没有参数  
+要实现任意变换，首先需要有参数，将其改为 `Delayms(xms)`  
+但是 `xms` 变量未定义，因此需要先定义变量  
+对于 16 位单片机，其所能存储的最大整数为 2^16-1 ，进行定义时，使用 `unsigned int xms` 表示定义无符号整型，范围为 0 ~ 65535 ；而使用 `signed int xms` (`sign` 可省略) 则需要去掉一半数据用来表示负数，范围为 -32768 ~ 32767  
+具体的数据类型见下表：  
+<img width="669" alt="image" src="https://user-images.githubusercontent.com/57821066/197253053-96a77be6-2eca-43bf-b88b-33cbb4233458.png">  
+函数名接下来应该改为 `Delay(unsigned int xms)`  
+再对其余部分进行修改
+```C
+#include <INTRINS.H>
+
+void Delay(unsigned int xms)		//@12.000MHz, Delay [xms] ms
+{
+	unsigned char i, j;
+  while(xms)
+  {
+	  i = 2;
+	  j = 239;
+	  do
+	  {
+	  	while (--j);
+	  } while (--i);
+    xms--;
+  }
+}
+```
+对 2-3 中的代码进行优化可得：  
+<details>
+<summary>代码</summary>
+<pre>
+
+```C
+#include <REGX52.H>
+#include <INTRINS.H>
+
+void Delay(unsigned int xms)		//@12.000MHz, Delay [xms] ms
+{
+	unsigned char i, j;
+  while(xms)
+  {
+	  i = 2;
+	  j = 239;
+	  do
+	  {
+	  	while (--j);
+	  } while (--i);
+    xms--;
+  }
+}
+
+void main()
+{
+	while(1)
+	{
+		P2 = 0xFE;       // 1111 1110
+		Delay(300);
+		P2 = 0xFD;       // 1111 1101
+		Delay(300);
+		P2 = 0xFB;       // 1111 1011
+		Delay(300);
+		P2 = 0xF7;       // 1111 0111
+		Delay(300);
+		P2 = 0xEF;       // 1110 1111
+		Delay(300);
+		P2 = 0xDF;       // 1101 1111
+		Delay(300);
+		P2 = 0xBF;       // 1011 1111
+		Delay(300);
+		P2 = 0x7F;       // 0111 1111
+		Delay(300);
+	}
+}
+```
+</pre></details>
 
 ### 补充 1： 电路元器件中一些数字的读取方式  
 一些电阻、电容、电位器等原件用以下方式表示其数值(如阻值)  
