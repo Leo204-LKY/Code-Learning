@@ -242,31 +242,14 @@ void main()
 - 前文中的电位器 (<img width="50" alt="image" src="https://user-images.githubusercontent.com/57821066/197003971-c06b0884-226a-4cf4-8d64-b222ddcd41c4.png">) 最大阻值为 10 000Ω 或 10KΩ  
 
 ### 补充 2： Keil μVision 5 使用说明
-1. 启动 Keil μVision 5 ，左上角 `Project` -> `New μVision Project...` 新建工程  
-  <img width="408" alt="image" src="https://user-images.githubusercontent.com/57821066/197006997-569bab56-6a24-466b-b117-01eb8b8b30a9.png">  
-  弹出 `Create New Project` 窗口，选择新建工程的位置 _(注：建议为空文件夹)_ 和工程名后点击 `保存(S)` 完成创建  
-2. 弹出新窗口 `Select Device for 'Target 1'...`，对于学习过程使用的开发板，搜索并选择 `AT89C52` (软件中没有 STC89C52 ，用 AT89C52 作为替代)，然后点击 `OK`  
-  <img width="470" alt="image" src="https://user-images.githubusercontent.com/57821066/197008189-58be1799-e40e-45eb-81ad-7e03a0986964.png">  
-  接下来会弹出对话框询问是否添加启动文件，此处选择不影响。但由于启动文件一般不需要进行改动，选择 `否(N)` 即可  
-  <img width="400" alt="image" src="https://user-images.githubusercontent.com/57821066/197008915-128f1495-878d-4ea1-ad22-0bc0902ec0b1.png">  
-  完成后展开 `Project` 窗口中的文件夹，可以看到 `Source Group 1` 文件夹，即为编写代码的文件夹  
-  <img width="304" alt="image" src="https://user-images.githubusercontent.com/57821066/197009743-06e07439-a905-4579-9649-0f5b2011c0c1.png">  
-3. 右键 `Source Group 1` 文件夹，点击 `Add New Item to Group 'Source Group 1'...`  
-  <img width="344" alt="image" src="https://user-images.githubusercontent.com/57821066/197010132-89f67090-a9af-412d-82fd-9733fa97adde.png">  
-  在弹出的窗口中选择 `C Fille (.c)` ，然后在 `Name` 栏输入 `main` ，点击 `Add`  
-  <img width="513" alt="image" src="https://user-images.githubusercontent.com/57821066/197010442-cda47aae-63c8-4934-92b0-c18cd195c95b.png">  
-  _注：工程中第一个 `.c` 文件名均应为 `main`_  
-4. 使用下图中 `Project` 窗口上方的 `Build` 按钮 (或键盘上的 `F7`) 来编译程序  
-  <img width="622" alt="image" src="https://user-images.githubusercontent.com/57821066/197011500-da689d77-e437-48ab-8de8-7367b131c336.png">  
-- 补充：需要在 `Options for Target...` -> `Output` 中勾选 `Create HEX File` ，用于后续烧录步骤使用  
-  <img width="343" alt="image" src="https://user-images.githubusercontent.com/57821066/197014053-7fcecfc3-9551-4c85-875a-eeb24f206316.png">  
-  <img width="470" alt="image" src="https://user-images.githubusercontent.com/57821066/197014319-6ef5247a-e475-4bff-830f-68131acc6818.png">  
+1. 启动 Keil μVision 5 ，左上角 `Project` -> `New μVision Project...` 新建工程<br><img width="408" alt="image" src="https://user-images.githubusercontent.com/57821066/197006997-569bab56-6a24-466b-b117-01eb8b8b30a9.png"><br>弹出 `Create New Project` 窗口，选择新建工程的位置 _(注：建议为空文件夹)_ 和工程名后点击 `保存(S)` 完成创建  
+2. 弹出新窗口 `Select Device for 'Target 1'...`，对于学习过程使用的开发板，搜索并选择 `AT89C52` (软件中没有 STC89C52 ，用 AT89C52 作为替代)，然后点击 `OK`<br><img width="470" alt="image" src="https://user-images.githubusercontent.com/57821066/197008189-58be1799-e40e-45eb-81ad-7e03a0986964.png"><br>接下来会弹出对话框询问是否添加启动文件，此处选择不影响。但由于启动文件一般不需要进行改动，选择 `否(N)` 即可<br><img width="400" alt="image" src="https://user-images.githubusercontent.com/57821066/197008915-128f1495-878d-4ea1-ad22-0bc0902ec0b1.png"><br>完成后展开 `Project` 窗口中的文件夹，可以看到 `Source Group 1` 文件夹，即为编写代码的文件夹<br><img width="304" alt="image" src="https://user-images.githubusercontent.com/57821066/197009743-06e07439-a905-4579-9649-0f5b2011c0c1.png">  
+3. 右键 `Source Group 1` 文件夹，点击 `Add New Item to Group 'Source Group 1'...`<br><img width="344" alt="image" src="https://user-images.githubusercontent.com/57821066/197010132-89f67090-a9af-412d-82fd-9733fa97adde.png"><br>在弹出的窗口中选择 `C Fille (.c)` ，然后在 `Name` 栏输入 `main` ，点击 `Add`<br><img width="513" alt="image" src="https://user-images.githubusercontent.com/57821066/197010442-cda47aae-63c8-4934-92b0-c18cd195c95b.png"><br> _注：工程中第一个 `.c` 文件名均应为 `main`_  
+4. 使用下图中 `Project` 窗口上方的 `Build` 按钮 (或键盘上的 `F7`) 来编译程序<br><img width="622" alt="image" src="https://user-images.githubusercontent.com/57821066/197011500-da689d77-e437-48ab-8de8-7367b131c336.png"><br>
+**补充：需要在 `Options for Target...` -> `Output` 中勾选 `Create HEX File` ，用于后续烧录步骤使用**<br><img width="343" alt="image" src="https://user-images.githubusercontent.com/57821066/197014053-7fcecfc3-9551-4c85-875a-eeb24f206316.png"><br><img width="470" alt="image" src="https://user-images.githubusercontent.com/57821066/197014319-6ef5247a-e475-4bff-830f-68131acc6818.png">  
 
 ### 补充 3： STC-ISP 使用说明  
 在 Keli μVision 5 中完成程序的编译后，使用 STC-ISP 来烧录程序  
-1. 启动 STC-ISP ，在 `单片机型号` 下拉框中依次选择 `STC89C52RC 系列` -> `STC89C52RC / LE52RC`
-  程序会自动检索单片机所连接的串口，一般无需调整串口号
-  <img width="603" alt="image" src="https://user-images.githubusercontent.com/57821066/197013037-2ad7c9be-cbf7-4b7f-9133-d8a67364f8c3.png">
+1. 启动 STC-ISP ，在 `单片机型号` 下拉框中依次选择 `STC89C52RC 系列` -> `STC89C52RC / LE52RC`<br>程序会自动检索单片机所连接的串口，一般无需调整串口号<br><img width="603" alt="image" src="https://user-images.githubusercontent.com/57821066/197013037-2ad7c9be-cbf7-4b7f-9133-d8a67364f8c3.png">  
 2. 点击 `打开程序文件` ，找到工程文件夹下的 `Objects` 文件夹，选择编译好的 `.hex` 文件  
-3. 点击 `下载/编程` ，重启单片机(关闭开关后重新开启)，输出 `操作成功 !` 即表示烧录成功  
-  <img width="603" alt="image" src="https://user-images.githubusercontent.com/57821066/197015613-ace00be8-f972-4869-a758-04e6b7fe59c3.png">  
+3. 点击 `下载/编程` ，重启单片机(关闭开关后重新开启)，输出 `操作成功 !` 即表示烧录成功<br><img width="603" alt="image" src="https://user-images.githubusercontent.com/57821066/197015613-ace00be8-f972-4869-a758-04e6b7fe59c3.png">  
