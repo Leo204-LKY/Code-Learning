@@ -244,7 +244,7 @@ void main()
 ### 补充 2： Keil μVision 5 使用说明
 1. 启动 Keil μVision 5 ，左上角 `Project` -> `New μVision Project...` 新建工程  
   <img width="408" alt="image" src="https://user-images.githubusercontent.com/57821066/197006997-569bab56-6a24-466b-b117-01eb8b8b30a9.png">  
-  弹出 `Create New Project` 窗口，选择新建工程的位置 _(注：建议为空文件夹)_ 和工程名后点击 `保存(S)` 完成创建
+  弹出 `Create New Project` 窗口，选择新建工程的位置 _(注：建议为空文件夹)_ 和工程名后点击 `保存(S)` 完成创建  
 2. 弹出新窗口 `Select Device for 'Target 1'...`，对于学习过程使用的开发板，搜索并选择 `AT89C52` (软件中没有 STC89C52 ，用 AT89C52 作为替代)，然后点击 `OK`  
   <img width="470" alt="image" src="https://user-images.githubusercontent.com/57821066/197008189-58be1799-e40e-45eb-81ad-7e03a0986964.png">  
   接下来会弹出对话框询问是否添加启动文件，此处选择不影响。但由于启动文件一般不需要进行改动，选择 `否(N)` 即可  
