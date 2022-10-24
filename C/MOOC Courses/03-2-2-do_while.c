@@ -23,4 +23,6 @@ int main()
     } while (x > 0);
     
     printf("%d", n);
+
+    return 0;
 }
