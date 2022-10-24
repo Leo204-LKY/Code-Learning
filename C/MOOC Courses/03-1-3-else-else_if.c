@@ -20,6 +20,8 @@ int main()
     } else {
         printf("你的钱不够\n");
     }
+    
+    return 0;
 }
 
 // 当 if 中的条件不成立时，将执行 else 中的程序
