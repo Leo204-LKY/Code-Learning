@@ -64,3 +64,22 @@ def sumFunction(**kwArgs):
 
 print(sumFunction(dkey1= 5,dkey2 = 10))
 # 用键来传递参数，可以更好的理解各个参数的意义
+
+
+# 函数数值的匹配
+# 按顺序匹配
+round(7.3784, 2)
+# 按关键字匹配
+round(number = 4.5321, ndigits = 2)
+round(ndigits=2, number = 4.5321)
+# 以上两者结合
+round(4.36984, ndigits = 2)
+
+# 但是注意，位置参数(positional arguments)不能在关键字(keyword arguments)参数后出现
+# >>> round(number = 4.50321, 2)
+# SyntaxError: positional argument follows keyword argument
+# 非关键字参数也不能出现在关键字参数前
+# >>> round(2, number = 4.50321)
+# TypeError: argument for round() given by name ('number') and position (1)
+
+# 补充：不要让代码出现死循环
