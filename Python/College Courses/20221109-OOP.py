@@ -98,7 +98,7 @@ del myCar
 
 # Inheritance 继承
 # OOP 的一个重要特性
-# 继承为一个对象从另一个对象继承方法和属性提供了一种方法，例如 Acar对象从 Vehicle 对象继承了 Drive 函数
+# 继承为一个对象从另一个对象继承方法和属性提供了一种方法，例如 ACar 对象从 Vehicle 对象继承了 Drive 函数
 # 继承有助于代码的重复利用
 # 当我们想到继承时，我们通常指的是
 # - 父类(包含适用于多个对象的通用属性和方法)
@@ -136,3 +136,107 @@ print(isinstance(s,Square))
 # 方法(methods)与函数(functions)
 # 方法与对象有联系，函数没有
 # 方法不能用名字调用，函数可以
+
+
+# Polymorphic classes 多态类
+# 多态性允许我们创建对象，其中包含与不同对象中的方法同名的方法
+#具有相似属性的不同对象可能具有相似的行为、操作等方法
+# 我们认为多态有多种形式
+class Italy():
+    def capital(self):
+        print("Rome")
+    def language(self):
+        print("Italian")
+    def currency(self):
+        print("Euro")
+
+class Scotland():
+    def capital(self): 
+        print("Edinburgh")
+    def language(self):
+        print("English") 
+    def currency(self):
+        print("Pound")
+# Italy 和 Scotland 两个类中各有相似的结构和相同名字的方法
+# 它们都没有超级类(Super class)或父类(Parent)
+# 我们可以类似地使用这两个对象，而不管它们的类型不同
+# 我们可以在不引用任何对象的类名的情况下做到这一点
+i = Italy()
+s = Scotland()
+
+for country in (i, s):
+    country.capital()
+    country.language()
+    country.currency()
+
+print(type(i))
+print(type(s))
+print(isinstance(s, Italy))
+print(isinstance(i, Scotland))
+# 这两项都有相同名称的类方法，因此调用时不需要关心对象类型/类类型
+
+# Multiple inheritance 多重继承
+# 单个类具有多个父类
+class Staff:
+    def __init__ (self, name, uid):
+        self.name = name 
+        self.uid = uid
+
+class Employee:
+    def __init__ (self, role, salary): 
+        self.role = role 
+        self.salary = salary
+
+class Secretary(Staff, Employee):
+    def __init__ (self, name, uid, role, salary, exp): 
+        self.exp = exp
+        Staff.__init__(self, name, uid) 
+        Employee.__init__(self, role, salary)
+    def basicInfo(self):
+        print({self.name, self.role, self.exp})
+# Secretary 从 Staff 和 Employee 继承了内容
+    
+s = Secretary("Beth", "b289", "Admin", 1000, 5) 
+s.basicInfo()
+
+# Encapsulation 封装
+# 一个对象变量不应该总是可以直接访问的，为了避免错误修改，我们可以将对象变量设为私有
+# 在变量前加入双下划线__即可
+# 其他编程语言使用 Python 中不可用的访问修饰符
+class User:
+    def __init__(self):
+        self.name = "JP"
+        self.__password = "secret"
+
+u = User()
+# >>> print(u.password)
+# AttributeError: 'User' object has no attribute 'password'
+# >>> print(u.__password)
+# AttributeErrorL 'User' object has no attribute '__password'
+
+# 使用 getter 和 setter 方法来修改私有变量
+# Getter和setter方法可用于包含额外的检查，以确保在访问或修改私有变量时遵守某些标准
+class User:
+    def __init__(self):
+        self.name = "JP"
+        self.__password = "secret"
+    
+    def getPassword(self):
+        print(self.__password)
+    
+    def setPassword(self, newPassword):
+        self.__password = newPassword
+
+u = User()
+u.getPassword()
+u.setPassword("New Secret")
+u.getPassword()
+
+# 小结
+# OOP 的内容比这里介绍的多得多
+# OOP 主要涉及设计
+#   - 识别物体
+#   - 理解对象属性
+#   - 理解对象之间的关系
+#   - 了解对象之间的相互作用
+# 以后将会学到更多关于 OOP 和其他范例的知识
