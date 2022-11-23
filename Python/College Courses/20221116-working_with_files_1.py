@@ -1,4 +1,6 @@
-# Working with files 文件处理
+# 不建议运行，因为会创建很多文件不便管理
+
+# Working with files 1 文件处理 1
 
 # open() 函数可用于返回一个文件对象
 # 通常接受两个参数
