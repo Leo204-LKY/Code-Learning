@@ -58,7 +58,7 @@
 #   | Pick()         | Pick()      | Pick()      |
 #   | Squeeze()      | Squeeze()   | Squeeze()   |
 
-# Object-Oriented Concepts/Terminology Ⅰ 面向对象的概念/术语Ⅰ
+# Object-Oriented Concepts/Terminology Ⅰ 面向对象的概念/术语 1
 # - 基本的构建块称为 class(类) 
 # - 类实例称为 object(对象) 或 instance(实例)
 # - 类的属性称为 data member(数据成员) 或 properties(属性)
