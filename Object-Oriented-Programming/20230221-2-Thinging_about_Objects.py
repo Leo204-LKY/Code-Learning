@@ -82,5 +82,5 @@
 # Object-oriented design(OOD) 面向对象设计
 # - 将这些需求转换为实现规范的过程
 # - 事情应该怎么做
-# Object-oriented programming (OOP) 面向对象编程
+# Object-oriented programming(OOP) 面向对象编程
 # - 将确定的设计转化为工作程序的过程
