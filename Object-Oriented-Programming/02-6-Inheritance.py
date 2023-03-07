@@ -1,4 +1,4 @@
-# Lecture 2.6: Inheritance in Python 继承
+# Lecture 2.6: Inheritance in Python 继承 Part 1
 
 # 我们在 Python 中创建的每个类都使用继承 - 它们都是 object 的子类
 # class Car: ... 即 class Car(object): ...
