@@ -1,3 +1,5 @@
+# Lecture 5.2: Exception Handling
+
 # Error Handling With Exceptions 使用 Exception 处理错误
 # 异常用于处理异常错误 extraordinarily errors("extraordinarily ones")。
 # 通常这些是致命的运行时错误("崩溃"程序 "crashes" program)
