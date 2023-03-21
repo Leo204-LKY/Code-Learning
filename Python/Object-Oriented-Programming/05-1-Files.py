@@ -1,4 +1,4 @@
-# Lecture 5.1: Files and Exception Handling
+# Lecture 5.1: Files
 
 # 从文件读取信息需要做什么
 # 1. 打开该文件并将该文件与一个文件变量关联起来
