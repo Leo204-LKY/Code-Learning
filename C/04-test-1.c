@@ -22,4 +22,5 @@ int main() {
     }
 
     printf("%d %d", odd, even);
+    return 0;
 }
