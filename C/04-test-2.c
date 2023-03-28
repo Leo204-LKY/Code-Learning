@@ -4,10 +4,10 @@
 // 你的程序要读入一个非负整数，整数的范围是[0,1000000]，然后按照上述算法计算出表示奇偶性的那个二进制数字，输出它对应的十进制值
 
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num, digit;
+    int num, digit, power;
+    int power_result = 1;
     int bit = 0;
     int binary = 0;
 
@@ -19,7 +19,13 @@ int main() {
         num = num / 10;
 
         if (bit % 2 == digit % 2) {
-            binary += (int)pow(2, bit - 1);
+            power = bit - 1;
+            while (power > 0) {
+                power_result *= 2;
+                power -= 1;
+            }
+            binary += power_result;
+            power_result = 1;
         }
     }
 
