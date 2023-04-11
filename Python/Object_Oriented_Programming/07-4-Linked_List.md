@@ -65,12 +65,48 @@
     - front元素存储在第一个节点上  
     - rear元素存储在最后一个节点上  
 - 所使用的空间为 O(n) ，队列 ADT 的每个操作花费 O(1) 时间  
-### Circularly Linked List 循环链表
-- 一个链表末尾的节点指向这个列表开头的节点
-- 应用：轮询调度器(Round Robin Schedulers)
-    - 通过重复执行以下步骤，我们可以使用队列Q实现轮询调度程序:
+### Circularly Linked List 循环链表  
+- 一个链表末尾的节点指向这个列表开头的节点  
+- 应用：轮询调度器(Round Robin Schedulers)  
+    - 通过重复执行以下步骤，我们可以使用队列Q实现轮询调度程序:  
         ```
         1. e = Q.dequeue()
         2. Service element e
         3. Q.enqueue (e)
         ```
+### Doubly Linked List 双向链表  
+- 双向链表提供了节点列表 ADT 的自然实现  
+- 节点实现位置和存储:  
+    - 元素(elements)  
+    - 链接到的上一个节点  
+    - 链接到的下一个节点  
+- 特殊的 trailer 和 header 节点  
+- 双向链表中的节点类  
+    ```Python
+    class _Node:
+        """Lightweight, nonpublic class for storing a doubly linked list"""
+        __slots__ = "_element", "_prev", "_next"
+
+        def __init__(self, element, prev, next):
+            self._element = element
+            self._prev = prev
+            self._next = next
+    ```
+- 性能  
+    - 包含n个元素的列表所使用的空间是O(n)  
+    - 列表中每个位置所使用的空间为O(1)  
+    - 所有列表的标准操作在O(1)时间内运行  
+### Positional List 位置列表 - 在序列中标识一个元素  
+- 为了提供元素序列的一般抽象，并具有识别元素位置的能力，我们定义了位置列表ADT。  
+- 位置在更广泛的位置列表中充当标记或标记。  
+- 位置p不受列表中其他位置变化的影响;一个位置变得无效的唯一方法是发出显式命令删除它。  
+- 位置实例是一个简单对象，只支持以下方法:  
+    - p.element():返回存储在p位置的元素。  
+> 想象一下编辑器中的光标：我们只需要识别光标下面的字符。  
+
+## 链表和数组有利有弊  
+- 快速访问数组元素的索引为O(1)，因为需要先在链表中找到元素  
+- 由于链表的 CPU 操作开销，等价的渐近操作（equivalent operations）在数组中更快  
+- 数组使用的内存比链表少，而链表的结构决定了其内存消耗  
+- 链表为操作提供了最坏的时间限制  
+- 链表支持在结构的任何位置进行 O(1) 次插入和删除  
