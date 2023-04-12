@@ -34,6 +34,6 @@ int main()
         printf("num = %d, cnt = %d, count = %d\n", num, cnt, total);
         num += 1;
     }
-    printf("%d", total);
+    printf("%d\n", total);
     return 0;
 }
