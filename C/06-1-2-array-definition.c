@@ -49,6 +49,7 @@ int main()
             scanf("%d", &x);
         }
     }
+    return 0;
 }
 
 // 长度为 0 的数组？
