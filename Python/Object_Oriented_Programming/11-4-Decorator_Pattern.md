@@ -1,6 +1,6 @@
 # Lecture 11.4: *Decorator* Pattern 修饰器模式  
 
-| 模式 | Decorator 修饰器 |
+| 模式 | Decorator 修饰器（也称 Wrapper） |
 | --- | --- |
 | 递归（Recurring）问题 | 当子类化（subclassing）不切实际时，如何动态地为对象增加新的职责？ |
 | 解决方案 | 1. 实现一个或多个装饰器类<br>2. 将一个对象封装在具有类似接口的装饰器对象中 |
