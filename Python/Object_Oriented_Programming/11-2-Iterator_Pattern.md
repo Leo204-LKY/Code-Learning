@@ -1,6 +1,6 @@
 # Lecture 11.1: *Iterator* Pattern 迭代器模式  
 
-| Pattern | Iterator |
+| 模式 | Iterator 迭代器 |
 | --- | --- |
 | 名称 | Iterator 迭代器（也称 Enumeration 枚举） |
 | 递归（Recurring）问题 | 如何遍历集合中的所有对象？您不希望在集合更改时更改客户端代码。想要同样的方法。 |
@@ -9,7 +9,8 @@
 
 ## GoF 版本的迭代器  
 ![GoF Version of Iterator](https://user-images.githubusercontent.com/57821066/234446577-4436cbdc-d7a9-485e-8125-743d42c41556.png)  
-### 迭代器模式 & Python  
+
+## 迭代器模式 & Python  
 - 迭代器内建于 Python 中
     ```Python
     for x in [1, 2, 3]:
