@@ -17,13 +17,13 @@ int search(int key, int a[], int len)
         }
     }
 
-    return ret;
+    return ret; // 单一出口原则
 }
 
 int main()
 {
     int a[] = {1, 3, 2, 5, 12, 14, 23, 6, 9, 45};
-    int r = search(12, a, sizeof(a)  / sizeof(a[0]));
+    int r = search(12, a, sizeof(a) / sizeof(a[0]));
     printf("%d\n", r);
 
     return 0;
