@@ -20,5 +20,17 @@ int main()
 {
     int a[] = {2, 45, 6, 12, 87, 34, 90, 24, 23, 11, 65};
     int len = sizeof(a) / sizeof(a[0]);
-    int maxid = max(a, len);
+
+    for (int i = len - 1; i > 0; i--) {
+        int maxid = max(a, i + 1);
+        int t = a[maxid];
+        a[maxid] = a[len - 1];
+        a[len - 1] = t;
+    }
+    
+    for (int i = 0; i < len; i++) {
+        printf("%d", a[i]);
+    }
+
+    return 0;
 }
