@@ -20,7 +20,7 @@ class Car:
 class BasicCar(Car):
     ...
     def assemble(self):
-        print("Basic Car."")
+        print("Basic Car.")
 ```
 如果我们想为从 `BasicCar` 创建的对象包括额外的行为，比如跑车选项和豪华车选项，该怎么办？  
 - 可以创建 `BasicCar` 的子类…
