@@ -37,3 +37,4 @@
 
 ### Java Virtual Machine (JVM) Java 虚拟机  
 JVM 是一个程序，它提供 Java 程序执行所必需的“runtime environment”（运行时环境，或 executed environment 执行环境）  
+![Java Virtual Machine](img/01-2-1-JVM.png)  
