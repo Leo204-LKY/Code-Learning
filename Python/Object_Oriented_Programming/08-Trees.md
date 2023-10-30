@@ -100,10 +100,10 @@
 - 与算术表达式关联的二叉树  
     - 内部节点：操作符(operators)  
     - 外部节点：操作数(operands)  
-- 例：表达式 (2 × (a - 1) + (3 × b)) 的算术表达式树
+- 例：表达式 (2 × (a - 1) + (3 × b)) 的算术表达式树  
     ![Arithmetic Expression Tree Example](https://user-images.githubusercontent.com/57821066/231104335-cbfad171-eba5-4578-9d11-afb05b0c7d8d.png)  
 ### Decision Tree 决策树  
-- 与决策过程相关的二叉树
+- 与决策过程相关的二叉树  
     - 内部节点：回答是或否的问题  
     - 外部节点：决策  
 - 例：晚餐决策  
