@@ -63,7 +63,6 @@
     - 进行必要的修正  
     - 将其保存在辅助存储设备上  
       ![Secondary Storage](img/01-2-2-Secondary_Storage.png)  
-
 #### 阶段 1.2：编辑代码文件  
 - 您可以使用任意文本编辑器（Vim, Notepad, TextEdit等）编辑源代码文件  
 - 也可以使用集成开发环境（Integrated Development Environment, IDE）  
@@ -72,11 +71,59 @@
         - Eclipse (http://www.eclipse.org)   
         - IntelliJ IDEA (http://www.jetbrains.com)  
         - NetBeans (http://www.netbeans.org)   
-
-#### 阶段 2：编译 Java 程序  
+#### 阶段 2.1：编译 Java 程序  
 - 使用命令 `javac`（Java compiler，Java 编译器）将源代码编译为程序  
 - 要将源文件 `Welcome.java` 编译，你需要输入：  
-  ```powershell
+  ```shell
   javac Welcome.java
   ```
-- 编译器创建字节码并将其存储在以. class 结尾的文件中  
+- 编译器创建字节码并将其存储在以 .class 结尾的文件中  
+#### 阶段 2.2：编译后的字节码  
+- Java 编译器将 Java 源代码转换为字节码，字节码表示在执行阶段要执行的任务  
+    - 虚拟机可以对与之交互的程序隐藏底层操作系统和硬件：如果同一个虚拟机在许多计算机平台上实现，那么为该类型虚拟机编写的应用程序可以在所有这些平台上使用  
+    - JVM —— JDK 的一部分和 Java 平台的基础——执行字节码  
+- 因此，Java 的字节码是<b><u>可移植的（portable）</u></b>，相同的字节码指令可以在包含 JVM 的任何平台上执行，该 JVM 能够理解字节码编译时使用的 Java 版本  
+#### 阶段 3：将程序载入内存  
+- JVM 将程序放在内存中以执行它——这被称为加载（loading）  
+- 类装入器获取包含程序字节码的 .class 文件，并将它们传输到主内存。它还加载程序使用的 Java 提供的任何 .class 文件  
+- ![Class loader](img/01-2-3-Class_loader.png)  
+#### 阶段 4：验证字节码  
+- 在加载类时，字节码验证器检查它们的字节码，以确保它们是有效的，并且没有违反 Java 的安全限制  
+    - Java 加强了强大的安全性，以确保 Java 程序不会破坏您的文件或系统（例如计算机病毒）  
+- ![Bytecode Verifier](img/01-2-4-Bytecode_verifier.png)  
+#### 阶段 5.1：运行  
+- JVM 执行程序的字节码  
+    - 今天的 JVM 通常结合使用解释和所谓的即时（JIT）编译来执行字节码  
+    - 使用 JIT ， JVM 可以在字节码被解释时分析它们，搜索热点——频繁执行的字节码  
+- ![Execute bytecode](img/01-2-5-JVM_Execute.png)  
+#### 阶段 5.2：即时（JIT）运行  
+- JIT 编译器（如 Oracle 的 Java HotSpot™ 编译器）将字节码翻译成计算机的机器语言  
+    - 当 JVM 再次遇到这些编译后的部分时，将执行更快的机器语言代码  
+- 使用 JIT ， Java 程序要经历两个编译阶段  
+    1. 将源代码转换为字节码（以便在不同的计算机平台上跨 JVM 进行可移植性）  
+    2. 在执行过程中，字节码被翻译成实际执行程序的计算机的机器语言  
+
+### 常见错误  
+- 当使用 `javac` 时，诸如 *“Bad command or filename”*（命令或文件名错误） 或 *“javac: command not found”* 之类的错误消息意味着您的 Java 软件安装没有正确完成  
+    - 问题通常出在 PATH 环境变量设置不正确；如果发生这种情况，请仔细查看安装说明  
+    - 在某些系统中，您需要在纠正 PATH 后重新启动计算机以使更改生效  
+- 当使用 Java 运行 .class 文件时，会出现诸如 *“java.lang.NoClassDefFoundError”* 之类的错误消息，通常意味着没有正确设置 Java CLASSPATH 环境变量  
+
+### Java CLASSPATH  
+- Java 解释器需要知道在哪里查找不属于核心 Java 的类（ .jar 或 .class 文件）  
+    - CLASSPATH 定义在哪里查找外部字节码文件  
+- 有两个方法来设置 CLASSPATH  
+    - 定义 CLASSPATH 环境变量：
+        - Linux：  
+          ```shell
+          export CLASSPATH=.:/path/to/external/library.jar
+          ```
+        - Windows：  
+          ```shell
+          set CLASSPATH=.;/path/to/external/library.jar 
+          ```
+    - 使用 Java 命令行 swith -cp 或 -classpath 命令  
+      ```shell
+      java -classpath .:/path/to/external/library.jar ProgramName arg
+      java -cp .:/path/to/external/library.jar ProgramName arg
+      ```
