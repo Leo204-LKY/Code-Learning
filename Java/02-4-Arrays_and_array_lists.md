@@ -26,7 +26,7 @@
     - 有 m 行 n 列的数组称为 m-by-n 数组  
 - 每个表元素都有两个索引  
     - 按照惯例，第一个索引是行，第二个索引是列  
-    ![Multidimensional array](img/02-4-1-Multidimensional_array.png)  
+    ![Multidimensional array](img/02-4-01-Multidimensional_array.png)  
 - 多维数组的维度可以***大于***两个！  
 
 ### 数组例  

@@ -30,11 +30,11 @@
 
 ### Git 快照（Snapshots）  
 在 Git 中，快照是项目文件在特定时间点的状态记录  
-![Git snapshots](img/02-1-1-Git_snapshot.png)  
+![Git snapshots](img/02-1-01-Git_snapshot.png)  
 
 ### Git 操作区（areas of operation）  
 Git 有三个操作区：工作目录、暂存区和 Git 目录（存储库）  
-![Git areas of operation](img/02-1-2-Git_areas_of_operation.png)  
+![Git areas of operation](img/02-1-02-Git_areas_of_operation.png)  
     - 工作目录：已修改、未提交的文件  
     - 暂存区：标记为进入提交快照的修改文件  
     - Git 目录：提交（Commit）意味着数据在存储库中  
@@ -87,7 +87,7 @@ git tag -l
 git tag <tag>
 ```
 #### 创建快照  
-![Making snapshots](img/02-1-3-Making_snapshots.png)  
+![Making snapshots](img/02-1-03-Making_snapshots.png)  
 #### 冲突  
 - 合并独立修改同一文件的两个分支将导致冲突  
 - 如果两个人在同一个分支中独立地处理同一个文件，那么第二个人的提交就会产生冲突  
@@ -97,7 +97,7 @@ git tag <tag>
   git pull <branch name>
   ```
 #### 查询修改（不同）的命令  
-![Commands for diffs](img/02-1-4-Commands_for_diffs.png)  
+![Commands for diffs](img/02-1-04-Commands_for_diffs.png)  
 
 ### 关于 Git 的更多  
 - Oh My Git!: https://ohmygit.org (a game about learning Git)  

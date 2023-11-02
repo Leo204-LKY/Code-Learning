@@ -37,7 +37,7 @@
 
 ### Java Virtual Machine (JVM) Java 虚拟机  
 - JVM 是一个程序，它提供 Java 程序执行所必需的“runtime environment”（运行时环境，或 executed environment 执行环境）  
-  ![Java Virtual Machine](img/01-2-1-JVM.png)  
+  ![Java Virtual Machine](img/01-2-01-JVM.png)  
 - 使用 `javac Program.java` 来将 .java 文件编译为 .class 文件  
 - 使用 `java <arguments> Program` 来运行 .class 文件  
 
@@ -62,7 +62,7 @@
     - 编写 Java 程序（源代码）  
     - 进行必要的修正  
     - 将其保存在辅助存储设备上  
-      ![Secondary Storage](img/01-2-2-Secondary_Storage.png)  
+      ![Secondary Storage](img/01-2-02-Secondary_Storage.png)  
 #### 阶段 1.2：编辑代码文件  
 - 您可以使用任意文本编辑器（Vim, Notepad, TextEdit等）编辑源代码文件  
 - 也可以使用集成开发环境（Integrated Development Environment, IDE）  
@@ -86,16 +86,16 @@
 #### 阶段 3：将程序载入内存  
 - JVM 将程序放在内存中以执行它——这被称为加载（loading）  
 - 类装入器获取包含程序字节码的 .class 文件，并将它们传输到主内存。它还加载程序使用的 Java 提供的任何 .class 文件  
-- ![Class loader](img/01-2-3-Class_loader.png)  
+- ![Class loader](img/01-2-03-Class_loader.png)  
 #### 阶段 4：验证字节码  
 - 在加载类时，字节码验证器检查它们的字节码，以确保它们是有效的，并且没有违反 Java 的安全限制  
     - Java 加强了强大的安全性，以确保 Java 程序不会破坏您的文件或系统（例如计算机病毒）  
-- ![Bytecode Verifier](img/01-2-4-Bytecode_verifier.png)  
+- ![Bytecode Verifier](img/01-2-04-Bytecode_verifier.png)  
 #### 阶段 5.1：运行  
 - JVM 执行程序的字节码  
     - 今天的 JVM 通常结合使用解释和所谓的即时（JIT）编译来执行字节码  
     - 使用 JIT ， JVM 可以在字节码被解释时分析它们，搜索热点——频繁执行的字节码  
-- ![Execute bytecode](img/01-2-5-JVM_Execute.png)  
+- ![Execute bytecode](img/01-2-05-JVM_Execute.png)  
 #### 阶段 5.2：即时（JIT）运行  
 - JIT 编译器（如 Oracle 的 Java HotSpot™ 编译器）将字节码翻译成计算机的机器语言  
     - 当 JVM 再次遇到这些编译后的部分时，将执行更快的机器语言代码  
