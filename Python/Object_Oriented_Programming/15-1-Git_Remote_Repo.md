@@ -15,7 +15,7 @@
 - 读取错误并在网络上查找，以便您了解如何修复和避免它们。  
 
 ### 本地和远程仓库需要保持同步  
-![Local and remote need to be kept synced](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/35c7db51-6064-40b8-ae3c-8b845426fa9d)
+![Local and remote need to be kept synced](img/15-1-01-Local_and_remote_need_to_be_kept_synced.png)  
 一个团队需要：  
 - 完成你的工作，然后从远程拉取（pull）更改，  
 - 然后进行测试看看哪里出了问题  
