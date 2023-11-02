@@ -7,7 +7,7 @@
 | 结果 | 可以更改集合类的详细信息，而无需更改遍历集合的代码 |
 
 ## GoF 版本的迭代器  
-![GoF Version of Iterator](https://user-images.githubusercontent.com/57821066/234446577-4436cbdc-d7a9-485e-8125-743d42c41556.png)  
+![GoF Version of Iterator](img/11-2-01-GoF_Version_of_Iterator.png)  
 
 ## 迭代器模式 & Python  
 - 迭代器内建于 Python 中

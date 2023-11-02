@@ -4,7 +4,7 @@
 这些数据可能以其他的模式或关系组织。  
 
 ## Tree 树  
-![Tree](https://user-images.githubusercontent.com/57821066/231093009-ce0edb3d-fa77-4604-bb3c-92ec53bddc4d.png)  
+![Tree](img/08-01-Tree.png)  
 - 计算机科学中，树(Tree)是层次结构的抽象模型  
 - 树由具有父子关系的节点组成  
 - 应用:  
@@ -13,7 +13,7 @@
     - Programming environments 编程环境  
 
 ## Tree Terminology 相关术语
-![Tree Terminology](https://user-images.githubusercontent.com/57821066/231093714-9c974533-c5d4-4635-8547-f060d98d7216.png)  
+![Tree Terminology](img/08-02-Tree_Terminology.png)  
 - 根节点(Root)：没有父节点(A)  
 - 内部节点(Internal node): 至少有一个子节点  
 - 兄弟节点(siblings):深度相同的子节点(B、C、D)。  
@@ -56,7 +56,7 @@
     **for** each child c in T.children(d) **do**
         preorder(T, c)      {recursively traverse the subtree rooted at c}
 ```
-![Preorder Traversal Example](https://user-images.githubusercontent.com/57821066/231096828-07d42e21-a2a3-4cb2-be58-977eb42247b6.png)  
+![Preorder Traversal Example](img/08-03-Preorder_Traversal_Example.png)  
 ### Postorder Traversal 后序遍历  
 - 一个节点在它的子节点之后被访问  
 - 应用:计算目录及其子目录中文件所使用的计算空间  
@@ -66,7 +66,7 @@
         postorder(T, c)         {recursively traverse the subtree rooted at c}
     perform the "visit" action for position p
 ```
-![Postorder Traversal Example](https://user-images.githubusercontent.com/57821066/231098979-36d73c3a-d9f6-4d28-a756-ff7b3e6074e7.png)  
+![Postorder Traversal Example](img/08-04-Postorder_Traversal_Example.png)  
 ## Breadth-First Traversal 广度优先遍历  
 - 在广度优先遍历中，每一层的所有节点都在其子节点之前被访问  
 - 应用:计算游戏中可能走法的游戏树，以根为初始配置  
@@ -79,10 +79,10 @@
         **for** each child c in T.children(p) **do**
             Q.enqueue(c)    {add p's children to the end of the queue for later visits}
 ```
-![Breadth-First Traversal Examples](https://user-images.githubusercontent.com/57821066/231100239-774f6e8a-9638-4cb2-80a1-8232dd5ef299.png)  
+![Breadth-First Traversal Examples](img/08-05-Breadth-First_Traversal_Examples.png)  
 
 ## Binary Tree 二叉树  
-![Binary Trees](https://user-images.githubusercontent.com/57821066/231103753-00de3e22-5454-440d-957c-8736c55dbcba.png)  
+![Binary Trees](img/08-06-Binary_Trees.png)  
 - 二叉树是一种具有以下属性的树:  
     - 每个内部节点最多有两个子节点(对于正确的二叉树，正好是两个)  
     - 一个节点的子结点是一个有序的对  
@@ -101,13 +101,13 @@
     - 内部节点：操作符(operators)  
     - 外部节点：操作数(operands)  
 - 例：表达式 (2 × (a - 1) + (3 × b)) 的算术表达式树  
-    ![Arithmetic Expression Tree Example](https://user-images.githubusercontent.com/57821066/231104335-cbfad171-eba5-4578-9d11-afb05b0c7d8d.png)  
+    ![Arithmetic Expression Tree Example](img/08-07-Arithmetic_Expression_Tree_Example.png)  
 ### Decision Tree 决策树  
 - 与决策过程相关的二叉树  
     - 内部节点：回答是或否的问题  
     - 外部节点：决策  
 - 例：晚餐决策  
-    ![Decision Tree Example](https://user-images.githubusercontent.com/57821066/231105422-41e6d529-7074-4003-8c27-df4fb1b09a04.png)  
+    ![Decision Tree Example](img/08-08-Decision_Tree_Example.png)  
 
 ## Properties of Proper Binary Trees 二叉树的性质  
 - Notation 符号  
@@ -182,7 +182,7 @@
     **if** p has a right child rc **then**
         inorder(rc)         {recursively traverse the right subtree of p}
 ```
-![Inorder Traversal Example](https://user-images.githubusercontent.com/57821066/231109487-d0819668-7048-4aec-a191-48e2f4d4c287.png)  
+![Inorder Traversal Example](img/08-09-Inorder_Traversal_Example.png)  
 我们从左到右遍历二叉树  
 ### Print Arithmetic Expressions  
 - 顺序遍历的专门化  
@@ -228,24 +228,24 @@
         eulertour(T, c)
     perform the "post visit" action for position p
 ```
-![Euler Tour Traversal Example](https://user-images.githubusercontent.com/57821066/231112580-5f2be4c1-7c2a-4f87-8fba-9d2a5e8f2e7e.png)  
+![Euler Tour Traversal Example](img/08-10-Euler_Tour_Traversal_Example.png)  
 
 ## Linked Structure for Trees 树的连接结构  
 - 节点由存储元素、父节点和子节点序列的对象表示  
 - 节点对象实现位置 ADT  
-![Linked Structure for Trees 1](https://user-images.githubusercontent.com/57821066/231127297-a4d12620-32de-4e9c-8d73-4955fa2c808a.png)  
-![Linked Structure for Trees 2](https://user-images.githubusercontent.com/57821066/231127139-c0d506e8-b9a9-4888-a7c0-4f040f6400b4.png)  
+![Linked Structure for Trees 1](img/08-11-Linked_Structure_for_Trees-1.png)  
+![Linked Structure for Trees 2](img/08-12-Linked_Structure_for_Trees-2.png)  
 
 ## Linked Structure for Binary Trees 二叉树的连接结构  
 - 节点由存储元素、父节点、左子节点和右子节点的对象表示  
 - 节点对象实现位置 ADT  
-![Linked Struecture for Binary Trees Example 1](https://user-images.githubusercontent.com/57821066/231128189-1eba3cab-9ea4-4798-8d1d-2311740c7b50.png)  
-![Linked Struecture for Binary Trees Example 2](https://user-images.githubusercontent.com/57821066/231128407-29312c9c-cbd7-416c-9165-1918bf92aa46.png)  
+![Linked Struecture for Binary Trees Example 1](img/08-13-Linked_Struecture_for_Binary_Trees_Example-1.png)  
+![Linked Struecture for Binary Trees Example 2](img/08-14-Linked_Struecture_for_Binary_Trees_Example-2.png)  
 
 ## Array-Based Representation of Binary Trees 基于数组表示的二叉树  
-![Array-Based Representation of Binary Trees 2](https://user-images.githubusercontent.com/57821066/231130871-33160873-d962-4b9a-8b8e-99fb6921b64a.png)  
+![Array-Based Representation of Binary Trees 1](img/08-15-Linked_Struecture_for_Binary_Trees_Example-1.png)  
 - 节点存储在数组 A 中  
-![Array-Based Representation of Binary Trees 2](https://user-images.githubusercontent.com/57821066/231128782-665fbf72-1970-457c-906d-716e728e0cc3.png)  
+![Array-Based Representation of Binary Trees 2](img/08-16-Linked_Struecture_for_Binary_Trees_Example-2.png)  
 - 节点 v 存储在 A\[rank(v)\] 中  
     - rank(root) = 0  
     - 如果节点是 parent(node) 的左子节点，那么 rank(node) = 2 * rank(parent(node)) + 1  

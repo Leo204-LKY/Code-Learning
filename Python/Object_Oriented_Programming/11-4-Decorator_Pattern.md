@@ -7,7 +7,7 @@
 | 结果 | 可以在运行时添加/删除行为<br>避免子类爆炸 |
 
 ## GoF 版本的修饰器  
-![GoF Version of Decorator](https://user-images.githubusercontent.com/57821066/234462912-88c60eac-d96e-4b88-bc2d-4e9088ece447.png)  
+![GoF Version of Decorator](img/11-4-01-GoF_Version_of_Decorator.png)  
 
 ## 修饰器模式 & Python  
 考虑这个例子：  

@@ -8,7 +8,7 @@
 | 结果 | 从子系统组件中保护客户；使子系统更容易使用<br>不阻止客户端直接使用子系统对象 |
 
 ### GoF 版本的外观模式  
-![GoF Version of Façade](https://user-images.githubusercontent.com/57821066/237032865-e25a257f-d282-4555-82da-25c3332f58e1.png)  
+![GoF Version of Façade](img/12-3-01-GoF_Version_of_Facade.png)  
 
 ### 外观模式 & Python  
 考虑以下例子：

@@ -21,7 +21,7 @@
 
 ## Layered Architecture 分层体系架构  
 - 经典的分层架构例子——通信系统：  
-    ![Communitation Systems](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/a01b7ea3-f037-4a28-bed8-507f5d2f06d6)  
+    ![Communitation Systems](img/13-2-01-Communitation_Systems.png)  
 - Variants 变体  
     - **Closed Layered Architecture 封闭式分层架构** - 每个层只与它下面的层交互  
     - **Open Layered Architecture 开放式分层架构** - 层可以自由地与任何其他层交互  
@@ -34,13 +34,13 @@
 - 这种方法的变体很常见  
     - 当转换是顺序的，这被称为 *batch sequential model* 批顺序模型，在数据处理系统中广泛使用  
 
-    ![Classic UNIX processes & pipes…](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/9d2b1f83-0970-4536-8a30-0366bf6d62c1)  
+    ![Classic UNIX processes & pipes…](img/13-2-02-Classic_UNIX_processes_&_pipes.png)  
 
 ## Client-Server Architecture 主从式架构  
 - 客户端和服务器组件(程序)是分开的  
     - 通常，客户机和服务器通过在不同硬件上的网络进行通信，但客户机和服务器可能位于同一系统中  
 
-    ![Client-Server Architecture](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/fa5c1069-2a2a-4938-8293-7a4279d69fb9)  
+    ![Client-Server Architecture](img/13-2-03-Client-Server_Architecture.png)  
 - **Client 客户端** - 从服务器请求内容或功能(如微软 Outlook)  
 - **Server 服务端** - 为一个或多个客户端(如微软 Exchange 邮件服务器)提供功能或服务  
 - 变体：  
@@ -54,7 +54,7 @@
     - 将在用户界面中显示数据的应用程序表示层与实际处理数据的方式隔离开来  
     - 允许独立开发、测试和维护  
 
-    ![Model-View Controller](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/18ec1d60-9933-4588-88fa-bfcc8c9967a6)  
+    ![Model-View Controller](img/13-2-04-Model-View_Controller.png)  
 - **Model 模型**  
     - 数据的模型或表示  
     - 提供数据的接口  
@@ -65,7 +65,7 @@
 - **Controller 控制器**
     - 接受输入并将其转换为模型或视图的命令  
 
-    ![MVC Instance](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/867f7219-e696-4992-8088-9d79ffcb3273)
+    ![MVC Instance](img/13-2-05-MVC_Instance.png)
 ### 模型-视图控制器 & Python  
 一个很简单的例子：  
 ```Python

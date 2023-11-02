@@ -7,15 +7,15 @@
 ### 回忆一下映射的概念
 直观地说，映射M支持使用 `M[k]` 这样的语法将键抽象为索引。  
 作为热身，考虑一个受限设置，在这个设置中，一个具有 `n` 个项的映射使用的键已知是范围从 `0` 到 `N − 1` 的整数，对于某些 `N≥n` 。  
-![image](https://user-images.githubusercontent.com/57821066/232949831-e0f0d37c-007c-4224-b58f-4606e3c7bd14.png)  
+![image](img/09-2-1.png)  
 
 ### 如果要存储的物品比空间多，那么我们可以把它们放进桶(bucket)里  
-![image](https://user-images.githubusercontent.com/57821066/232950153-46799da2-f190-4e10-a859-bbc43eb89404.png)  
+![image](img/09-2-2.png)  
 我们可以使用哈希函数将项分配到桶数组的索引中  
 > 目标是使用哈希函数 `h(k)` 将项目 `(k, v)` 存储在桶 `A[h(k)]` 中  
 
 ### 一个哈希函数包含两部分  
-![image](https://user-images.githubusercontent.com/57821066/232950654-7f578db0-2f86-4725-97d6-e365d992ee68.png)  
+![image](img/09-2-3.png)  
 - Hash code 哈希码：将一个键映射到一个整数  
 - Compression function 压缩函数：将哈希码映射为 bucket 数组索引范围 `[0, N-1]` 内的整数  
 
@@ -109,7 +109,7 @@ class HashMapBase(MapBase):
 - Separate Chaining 分离链：让表中的每个元素指向映射到表中的条目的链表  
 > 单独的链接很简单，但是需要额外的表外内存  
 
-![image](https://user-images.githubusercontent.com/57821066/232959151-56bd4aba-8626-45c2-97b6-e68c264aac8c.png)  
+![image](img/09-2-4.png)  
 
 ### 带有分离链的哈希表
 ```Python

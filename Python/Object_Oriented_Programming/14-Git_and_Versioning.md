@@ -37,18 +37,18 @@ Git监视文件，跟踪不同版本文件之间的差异，并存储这些差�
 
 ### Git 提供快照（Snapshot）  
 - 其他系统跟踪文件中的更改，例如subversion、CVS等  
-    ![Other Systems](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/fa9bab8f-4d92-4f8d-a942-e7f6b5ee9507)  
+    ![Other Systems](img/14-01-Other_Systems.png)  
 - Git 将数据存储为快照，因此克隆是项目的完整备份  
-    ![Git](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/dfbea986-05a5-4f28-a8d4-910db3572f66)  
+    ![Git](img/14-02-Git.png)  
 
 ### Git 有三个操作区域  
-![Three areas of operation of Git](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/62542462-812a-4015-80b8-465dcc4aeb63)  
+![Three areas of operation of Git](img/14-03-Three_areas_of_operation_of_Git.png)  
 - **Modified** - 已修改，未提交的文件  
 - **Staged** - 标记为进入提交快照的修改文件  
 - **Committed** - 意味着数据在存储库中  
 
 ### 以及四个文件选项  
-![Four file status options](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/c33087ba-ebfb-441b-8200-655885d1b455)  
+![Four file status options](img/14-04-Four_file_status_options.png)  
 - **Untrack** - 被忽略的文件  
 - **Unmodified** - 未修改的文件  
 - **Modified** - 已修改，但未进入提交阶段（Stage of commit）的文件  

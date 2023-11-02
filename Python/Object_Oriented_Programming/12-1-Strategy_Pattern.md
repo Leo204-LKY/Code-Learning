@@ -7,7 +7,7 @@
 | 结果 | 为重用而组织的相关算法或行为族<br>提供实现的选择<br>消除了许多条件语句 |
 
 ## GoF 版本的策略  
-![GoF Version of Strategy](https://user-images.githubusercontent.com/57821066/237018637-1b3610a1-7117-401c-9880-1aa61987854b.png)  
+![GoF Version of Strategy](img/12-1-01-GoF_Version_of_Strategy.png)  
 
 ## 策略模式 & Python  
 考虑以下例子：  

@@ -13,8 +13,8 @@
 > http://www.scrumguides.org/scrum-guide.html  
 
 ### Agile 是一个方向  
-![Agile is a direction 1](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/cb160555-41f3-434e-abdf-8789cdf1186b)  
-![Agile is a direction 2](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/4688af30-d6ef-4f77-813c-bdeb89161d4e)  
+![Agile is a direction 1](img/15-2-01-Agile_is_a_direction-1.png)  
+![Agile is a direction 2](img/15-2-02-Agile_is_a_direction-2.png)  
 
 ## 敏捷软件开发价值  
 - **Individuals and Interactions** over processes and tools  
@@ -33,7 +33,7 @@
     https://www.scrum.org/resources/scrum-guide  
 
 ## 我们（总是？）处于不确定的空间  
-![We are (always?) in unsure spaces](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/243b6bfa-4d12-4569-8967-e94be7544a3f)  
+![We are (always?) in unsure spaces](img/15-2-03-We_are_(always)_in_unsure_spaces.png)  
 - 未知的空间是等待发现的机会  
 - 当某些事情不清楚时，就会有风险，我们会通过发现和测试假设来减轻风险  
 - 如果没有风险，那又何苦呢？  
@@ -44,28 +44,28 @@
 故事应该是垂直的、可测试的、有用户价值的。它应该导致可见的变化、跨越多个架构层。  
 
 ## 敏捷开发关注于小批量交付的工作软件  
-![Agile development focuses on working software delivered in small batches](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/fe5ea844-0fbd-4a1c-a28b-4d92436a7cd3)  
+![Agile development focuses on working software delivered in small batches](img/15-2-04-Agile_development_focuses_on_working_software_delivered_in_small_batches.png)  
 
 ## 垂直切片提供更好的开发  
-![Vertical Slides](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/dfa7a7b0-9c56-4b3d-a564-c68d5fb9bef1)  
+![Vertical Slides](img/15-2-05-Vertical_Slides.png)  
 每小时提交多次，越小越好  
 
 ## 遵循计划或流程  
 计划倾向于使用“大预先设计”（big upfront design, BUD）  
-![Big Upfront Design](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/8b8f97ac-9ba3-416f-a5af-2b6fbfe61096)  
+![Big Upfront Design](img/15-2-06-Big_Upfront_Design.png)  
 迭代和增量开发使用一个过程来交付价值  
 
 ## 敏捷实践支持更快的反馈： testable/usable/lovable  
-![Agile practices enable faster feedback](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/96213b73-cfb7-40e8-9314-e286d294beb9)  
+![Agile practices enable faster feedback](img/15-2-07-Agile_practices_enable_faster_feedback.png)  
 
 ## Scrum 和 Scrum/XP 混合是很常见的  
 所有方法共享的前 5 个实践  
-![Scrum and Scrum/XP hybrid are common 1](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/0d4febd1-a387-4deb-9212-99317bf087d9)  
-![Scrum and Scrum/XP hybrid are common 2](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/74209efa-398b-4f5c-b0b0-97c89e4052f6)  
+![Scrum and Scrum/XP hybrid are common 1](img/15-2-08-Scrum_and_Scrum_or_XP_hybrid_are_common-1.png)  
+![Scrum and Scrum/XP hybrid are common 2](img/15-2-09-Scrum_and_Scrum_or_XP_hybrid_are_common-2.png)  
 
 ## 测试是敏捷方法的关键部分  
-![Testing is a key part of the agile approach 1](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/b9f5d6f1-f51d-4a48-b6df-e7ca522412c4)  
-![Testing is a key part of the agile approach 2](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/8f1e5bca-162a-41f1-849c-227a16994a30)  
+![Testing is a key part of the agile approach 1](img/15-2-10-Testing_is_a_key_part_of_the_agile_approach-1.png)  
+![Testing is a key part of the agile approach 2](img/15-2-11-Testing_is_a_key_part_of_the_agile_approach-2.png)  
 
 ## 你必须测试你的代码  
 如果不测试代码，你就不会知道：  
@@ -76,13 +76,13 @@
 如果你在开发时不抽出时间，那么你会在代码崩溃后抽出时间。你可以选择什么时候做测试  
 
 ## 敏捷方法提供了更好的反馈  
-![Agile approaches provide better feedback](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/25d28b9f-e76e-4429-8a61-2bbd78aa8993)  
+![Agile approaches provide better feedback](img/15-2-12-Agile_approaches_provide_better_feedback.png)  
 
 ## 使用红色、绿色、重构来编写代码  
 **Use red, green, refactor to code**  
 > Make it green, then make it clean  
 
-![Use red, green, refactor to code](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/853f329c-04b5-4bc0-9d72-bbb7c5aa267b)  
+![Use red, green, refactor to code](img/15-2-13-Use_red_green_refactor_to_code.png)  
 
 ## 缩短反馈循环（feedback loop）可以降低成本  
 - 越早发现问题，就意味着问题越早得到解决  
@@ -91,7 +91,7 @@
 - 更早的修复意味着更多的时间用于其他事情，例如部署应用程序和带来收入——你不必总是等待它“完成”才能开始使用它  
 
 ## 遵循 TDD 原则  
-![TDD principles](https://github.com/Leo204-LKY/Code-Learning/assets/57821066/35098a6f-7dbd-4355-8223-497a9d9b4e89)  
+![TDD principles](img/15-2-14-TDD_principles.png)  
 
 ## 根据客户的业务需求进行测试  
 - 只编写应用程序中需要的测试  

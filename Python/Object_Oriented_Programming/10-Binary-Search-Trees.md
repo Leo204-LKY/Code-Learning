@@ -5,7 +5,7 @@
 - 在每一步中，候选项的数量减半  
 - 在O(log n)步长后终止，例如: `find(7)`  
 
-![find(7)](https://user-images.githubusercontent.com/57821066/233935599-1abd1b47-2466-4284-878b-c103b624a31e.png)  
+![find(7)](img/10-01-find(7).png)  
 
 ## Search Tables 查找表  
 - 查找表是通过有序序列实现的有序映射  
@@ -19,7 +19,7 @@
 
 ## Sorted Map Operations 排序映射操作  
 - 标准的序列方法：  
-    ![Standard Map methods](https://user-images.githubusercontent.com/57821066/233937392-eca10981-c560-4d61-8050-20516bd2c9ce.png)  
+    ![Standard Map methods](img/10-02-Standard_Map_methods.png)  
 - 排序映射ADT包括额外的功能，保证迭代按排序顺序报告键，并支持额外的搜索，如 `find_gt(k)` 和 `find_range(start, stop)`  
 
 ## Binary Search Trees 二叉查找树/二叉搜索树  
@@ -27,10 +27,10 @@
     - 设 `u`, `v`, `w` 为三个节点上的键，使得 `u` 在 `v` 的左子树中， `w` 在 `v` 的右子树中，则有`键(u) ≤ 键(v) ≤ 键(w)`  
 - 外部节点不存储项，而是将其视为 `None`  
 - 二叉搜索树的无序遍历以递增的顺序访问键
-    ![Binary Search Tree Example](https://user-images.githubusercontent.com/57821066/233942915-791af527-c840-4cb6-8f0a-ead18aad2859.png")  
+    ![Binary Search Tree Example](img/10-03-Binary_Search_Tree_Example.png)  
 
 ### 二叉树与决策树类似
-![Image](https://user-images.githubusercontent.com/57821066/233943197-32b5ecd1-7ec3-4c14-b028-90638ed38bd7.png)
+![Image](img/10-04.png)
 > Is the key  
 > - Equal to key at position p, (search done),  
 > - If greater, search right subtree,  
@@ -53,26 +53,26 @@ Algorithm TreeSearch(T, p, k):
 
 ### 二分查找依赖于时间深度  
 我们在每一层花费O(1)时间，所以总时间(在最坏的情况下)取决于高度  
-![Total Time](https://user-images.githubusercontent.com/57821066/233945542-1824ad35-7ac1-4e92-a0e6-67fbbf0baad6.png)  
+![Total Time](img/10-05-Total_Time.png)  
 
 ## Insertion 插入  
-![Insertion](https://user-images.githubusercontent.com/57821066/233947434-28ccaac4-60ad-4790-8404-118be2e83812.png)  
+![Insertion](img/10-06-Insertion.png)  
 
 ## Deletion 删除  
 ### 删除时可能需要移动节点
-![Deletion Example 1](https://user-images.githubusercontent.com/57821066/233948247-4e95c74e-cf6b-45bd-9432-336546725f59.png)  
+![Deletion Example 1](img/10-07-Deletion_Example-1.png)  
 - 我们移除了 32，并将子节点上移  
 - 如果 32 是外部的(external)，那么只需移除即可  
 
 ### 删除时节点级别可能会提高  
-![Deletion Example 2](https://user-images.githubusercontent.com/57821066/233948851-30044193-fcf7-40d5-b7c2-36374c334833.png)  
+![Deletion Example 2](img/10-08-Deletion_Example-2.png)  
 - 当删除一个元素时，我们需要考虑子节点右边的子树，这样树才能保持有序。  
 
 ## 二叉查找树的性能与高度(Height)有关  
 - 高度 `h` 在最坏情况下是 `O(n)` ，在最好情况下是 `O(log n)`  
 - `find_range()` 方法也依赖于项的数量  
 
-![Operations and its running time](https://user-images.githubusercontent.com/57821066/233949807-ac49f58f-3544-4537-984d-2e3518a26fa2.png)
+![Operations and its running time](img/10-09-Operations_and_its_running_time.png)
 
 ## 在 Python 中实现二叉查找树  
 ```Python

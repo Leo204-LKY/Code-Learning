@@ -7,7 +7,7 @@
 | 结果 | 单个适配器可以与多个适配器（Adaptee 及其子类）一起工作 |
 
 ## GoF 中的适配器  
-![GoF Version of Adapter](https://user-images.githubusercontent.com/57821066/234471166-ec89892d-b86e-4abe-8a21-80dcf3128ac3.png)  
+![GoF Version of Adapter](img/11-5-01-GoF_Version_of_Adapter.png)  
 
 ## 适配器模式 & Python  
 考虑这个例子：  

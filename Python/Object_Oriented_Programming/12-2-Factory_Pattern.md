@@ -7,7 +7,7 @@
 | 结果 | 接口与实现分离，提供实现灵活性<br>免除客户端直接创建对象的责任 |
 
 ## GoF 版本的工厂方法  
-![GoF Version of Factory Method](https://user-images.githubusercontent.com/57821066/237022995-cf226252-36bb-45e7-ae67-3ebc673f68c9.png)  
+![GoF Version of Factory Method](img/12-2-01-GoF_Version_of_Factory_Method.png)  
 
 ## 工厂方法 & Python  
 考虑这个（非常简单的）例子：  
@@ -58,4 +58,4 @@ Electric car driving.
 - 将客户端与类的实现细节隔离开来  
 - 它使交换类族(实现)更容易  
     - 修改 `ConcreteFactory`  
-![AbstractFactory Pattern and FactoryMethod](https://user-images.githubusercontent.com/57821066/237030457-2c47f631-5567-4435-b67b-2f32dd551234.png)  
+![AbstractFactory Pattern and FactoryMethod](img/12-2-02-AbstractFactory_Pattern_and_FactoryMethod.png)  

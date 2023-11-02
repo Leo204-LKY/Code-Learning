@@ -30,20 +30,20 @@
 
 ## 节点操作  
 ### Inserting at the Head 在链表头部插入  
-![Inserting at the Head](https://user-images.githubusercontent.com/57821066/229742094-fbef5ef1-207c-4e6e-8bdd-07eff0eaf061.png)
-![Algorithm](https://user-images.githubusercontent.com/57821066/229742784-31b7f896-fe88-40d8-9795-a155e399a9ba.png)
+![Inserting at the Head](img/07-4-01-Inserting_at_the_Head.png)  
+![Algorithm](img/07-4-02-Algorithm.png)  
 1. 分配一个新节点  
 2. 插入新元素  
 3. 使新节点指向原先的头节点  
 4. 更新 head 指向新节点  
 ### Removing at the Head 删除链表头节点  
-![Removing at the Head](https://user-images.githubusercontent.com/57821066/229742601-116e62c1-a365-433b-87ef-0e12102439fd.png)  
-![Algorithm](https://user-images.githubusercontent.com/57821066/229742796-9280485c-fc94-4785-b13a-38d137eea08f.png)  
+![Removing at the Head](img/07-4-03-Removing_at_the_Head.png)  
+![Algorithm](img/07-4-04-Algorithm.png)  
 1. 更新head，使其指向列表中的下一个节点  
 2. 允许 garbage collector 回收前第一个节点  
 ### Inserting at the tail 在链表尾部插入  
-![Inserting at the tail](https://user-images.githubusercontent.com/57821066/229743269-b8456124-511a-4c8c-bfe2-71ac42ff11c2.png)  
-![Algorithm](https://user-images.githubusercontent.com/57821066/229743281-cb05009c-0065-4c92-b652-65714306d876.png)  
+![Inserting at the tail](img/07-4-05-Inserting_at_the_tail.png)  
+![Algorithm](img/07-4-06-Algorithm.png)  
 1. 分配一个新节点  
 2. 插入新元素  
 3. 使新节点指向 `null`  
