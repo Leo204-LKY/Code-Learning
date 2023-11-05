@@ -3,7 +3,7 @@
 ### Class inheritance 类继承  
 - 通过类继承，我们可以声明从更高级类继承共同结构的类  
     - 继承类的对象可以使用其继承类的成员变量和方法  
-    - <img width="400" alt="image" src="img/03-3-01-Class_inheritance_example.png">  
+    - <img width="400" alt="Class inheritance example" src="img/03-3-01-Class_inheritance_example.png">  
 #### 类继承的优点  
 - DRI: don't repeat yourself 不要重复  
     - 通过继承，我们可以将共同的结构和信息传递给类似的对象  
