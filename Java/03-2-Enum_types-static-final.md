@@ -97,7 +97,7 @@ CPPHTP    C++ How to Program                          2017
 - 静态变量具有类作用域（class scope），它代表*整个类*的信息：该类的所有对象共享*同一段*数据，它也可以在该类的所有方法中使用  
 - 静态变量的声明以关键字 `static` 开始  
 - 例子：  
-  <img width="300" alt="image" src="img/03-2-01-static_class_example.png">
+  <img width="300" alt="Static class example" src="img/03-2-01-Static_class_example.png">
 #### 静态类成员的特性  
 - 静态类成员在类执行时加载到内存中后立即可用  
     - 声明为私有静态（`pravite static`）的类成员只能通过类的方法被客户端代码访问  
