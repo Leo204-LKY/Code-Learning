@@ -71,7 +71,7 @@
           // display initial value of name (null)
           System.out.printf("Initial name is: %s%n%n", myAccount.getName());
 
-          //prompt for and read name
+          // prompt for and read name
           System.out.println("Please enter the name:");
           String theName = input.nextLine();
           myAccount.setName(theName);
