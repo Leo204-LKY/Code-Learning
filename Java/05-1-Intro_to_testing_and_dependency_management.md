@@ -58,20 +58,20 @@
 
 ### Test-driven development 测试驱动开发  
 - 使用测试驱动代码的执行  
-  ![Test-driven development](img/04-1-01-Test-driven_development.png)  
+  ![Test-driven development](img/05-1-01-Test-driven_development.png)  
 #### 测试驱动开发的例子  
 - 编写计算组合数（即 $C(n, k)=\frac{n!}{r!(n-r)!}$）的方法  
-- ![Test-driven development example 1](img/04-1-02-Test-driven_development_example-1.png)  
-- ![Test-driven development example 2](img/04-1-03-Test-driven_development_example-2.png)  
-- ![Test-driven development example 3](img/04-1-04-Test-driven_development_example-3.png)  
-- ![Test-driven development example 4](img/04-1-05-Test-driven_development_example-4.png)  
-- ![Test-driven development example 5](img/04-1-06-Test-driven_development_example-5.png)  
+- ![Test-driven development example 1](img/05-1-02-Test-driven_development_example-1.png)  
+- ![Test-driven development example 2](img/05-1-03-Test-driven_development_example-2.png)  
+- ![Test-driven development example 3](img/05-1-04-Test-driven_development_example-3.png)  
+- ![Test-driven development example 4](img/05-1-05-Test-driven_development_example-4.png)  
+- ![Test-driven development example 5](img/05-1-06-Test-driven_development_example-5.png)  
 
 ## Dependency management 依赖性管理  
 - 大型软件项目通常会使用不同的第三方库  
     - 库与库之间存在不同的（有时是复杂的）**依赖关系**：某些库可能会使用另一个库的特定版本  
     - 升级到新版本时，依赖关系可能会被破坏
-      ![Broken dependency](img/04-1-07-Broken_dependency.png)  
+      ![Broken dependency](img/05-1-07-Broken_dependency.png)  
 - 妥善维护依赖关系需要依赖*关系管理*  
 
 ### 依赖性管理基础  
