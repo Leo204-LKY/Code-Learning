@@ -1,4 +1,8 @@
 # Day 7: Graphical user interfaces 图形用户界面  
+- 目标  
+    - 能解释图形用户界面的主要概念和术语，以及  
+    - 能使用标准 Swing 组件实现简单的用户界面  
+    - 为不同用途选择合适的图形用户界面组件
 
 ## Session 1: Introduction to graphical user interfaces 简介  
 
