@@ -19,7 +19,7 @@ class IntOverflowException extends Exception {
 }
 
 public class TestCustomException {
-    // 你需要使用关键字 throws 来指明哪些方法会抛出自定义异常。或者，您也可以从 RuntimeException 继承异常
+    // 你需要使用关键字 throws 来指明哪些方法会抛出自定义异常。或者，也可以从 RuntimeException 继承异常
     static int face(int x) throws IntOverflowException {
         int y = 1;
         for (int i = 1; i <= x; y *= i++) {
