@@ -143,7 +143,7 @@ $
     - 如果指定区域中的子字符串（子串）相等，则返回 true  
 - 两个版本（四个或五个参数）  
     - 方法 `regionMatches(off1, str2, off2, len)`：如果从本字符串中 off1 位置开始的长度为 len 的子字符串与参数字符串 str2 中 off2 位置开始的长度为 len 的子字符串相等，则返回 true  
-    - `regionMatches(ignoreCase,off1,str2,off2,len)` 方法中，还有一个布尔类型的第一参数，用于确定是否忽略大小写  
+    - `regionMatches(ignoreCase, off1, str2, off2, len)` 方法中，还有一个布尔类型的第一参数，用于确定是否忽略大小写  
 
 ### 从字符串中提取子字符串  
 - 提取子串时，可使用方法 `substring()`  
