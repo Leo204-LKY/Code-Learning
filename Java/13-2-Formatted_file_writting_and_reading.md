@@ -153,7 +153,7 @@ import java.util.*;
 public class ReadCSVWithScanner {
     public static void main(String[] args) {
         // 值存储在二维列表（列表的列表）中
-        List<List<String>> records = new ArrayLIst<>();
+        List<List<String>> records = new ArrayList<>();
 
         try {
             File file = new File("products.csv");
@@ -197,7 +197,7 @@ public class ReadCSVWithBufferReader {
 
         // 使用 Scannner 执行与上一示例类似的功能
         try {
-            BufferReader br = new BufferReader(new FileReader("products.csv"));
+            BufferedReader br = new BufferReader(new FileReader("products.csv"));
             String line;
             while ((line = br.readLine()) != null) {
                 String[] values = line.split(",");
