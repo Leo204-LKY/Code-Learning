@@ -36,7 +36,7 @@
 import java.sql.*;
 
 public class DatabaseExample {
-    String urlPrefix = "jdbc:mysql://localhost"; // 数据库服务器的 URL：取决于位置和使用的 DBMS
+    String urlPrefix = "jdbc:mysql://localhost/"; // 数据库服务器的 URL：取决于位置和使用的 DBMS
     String urlPostfix = "?autoReconnect=true&useSSL=false";
 
     // 连接 SQL
