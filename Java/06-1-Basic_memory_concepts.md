@@ -59,7 +59,7 @@
 5. 结束  
    ![Reference type variable example-7](img/06-1-18-Reference_type_variable_example-7.png)  
 
-### 深度复制方法：`clone()`  
+### 复制方法：`clone()`  
 - 如果要复制引用数据的完整副本，而不仅仅是另一个引用，可以使用方法 `clone()`  
   ![Deep copy method clone()](img/06-1-19-Deep_copy_method-clone.png)  
 
