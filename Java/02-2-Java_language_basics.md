@@ -124,7 +124,7 @@ public class Welcome4 {
 Welcome to
 Java programming!
 ```
-- 注：`\n` 和 `%` 都可用于换行  
+- 注：`\n` 和 `%n` 都可用于换行  
 
 ### 声明变量  
 - 在 Java 中，使用变量前需要先声明它们  
@@ -218,10 +218,10 @@ Sum is: 4.01
 ### Java 中的算术运算  
 | Java 运算 | 运算符 | 代数表达式 | Java 表达式 |
 | --- | --- | ---- | --- |
-| Addition 加 | + | _f_ + 78 | f + 78 |
-| Substraction 减 | - | _f_ - _c_ | f - c |
-| Multiplication 乘 | \* | _bm_ | b * m |
-| Division 除以 | / | _x_/_y_（或分数表示） | x / y |
+| Addition 加 | + | $f + 78$ | f + 78 |
+| Substraction 减 | - | $f - c$ | f - c |
+| Multiplication 乘 | \* | $bm$ | b * m |
+| Division 除以 | / | $x/y$（或分数表示） | x / y |
 | Remainder 取余 | % | _r_ mod _s_ | r % s |
 #### 算术优先级  
 - Java 中的算术操作遵循标准优先级  

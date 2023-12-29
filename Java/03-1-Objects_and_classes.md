@@ -20,7 +20,7 @@
 - ![Examples of relations of class and object](img/03-1-01-Examples_of_relations_of_class_and_object.png)  
 
 ### Java 中的对象和类  
-- 在 Java 中，您可以根据需要声明新的类，这也是 Java 被称为_可扩展_（extensible）语言的原因之一  
+- 在 Java 中，你可以根据需要声明新的类，这也是 Java 被称为_可扩展_（extensible）语言的原因之一  
 - 创建的每个类都会成为一个新类型，可用于声明变量和创建对象  
     - 按照惯例，类名、方法名和变量名都是标识符，都使用驼峰字母命名法  
     - 此外，按照惯例，类名以大写字母开头，方法名和变量名以小写字母开头  

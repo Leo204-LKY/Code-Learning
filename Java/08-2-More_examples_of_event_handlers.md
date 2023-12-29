@@ -123,7 +123,7 @@ public class SliderExample extends JPanel
 ### Text fields 文本字段  
 - 文本组件（如 JTextArea 和 JTextPane）可以编辑  
     - 必要时，可使用方法 getText() 获取编辑过的文本  
-    - 您可以为文本组件添加 actionListener，但通常没有必要  
+    - 你可以为文本组件添加 actionListener，但通常没有必要  
 - <img width="300" alt="Text fields" src="img/08-2-05-Text_fields.png">  
 - 参考：  
     - https://docs.oracle.com/javase/tutorial/uiswing/components/textfield.html  

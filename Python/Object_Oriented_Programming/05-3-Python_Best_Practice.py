@@ -35,12 +35,12 @@
 # 如果需要，也可以讨论其他专业话题 Maybe others on specialist topics as required
 
 # Python anti-patterns | Python 反模式 - Worst practices 最差实践
-# Correctness 正确性：反模式会破坏您的代码或使其做错误的事情
+# Correctness 正确性：反模式会破坏你的代码或使其做错误的事情
 # Maintainability 可维护性：使代码难以维护或扩展的反模式
 # Readability 可读性：使代码难以阅读或理解的反模式
 # Performance 性能：会不必要地降低代码速度的反模式
 # Security 安全性：对程序构成安全风险的反模式
-# Migration 迁移：帮助您更快地迁移到框架新版本的模式
+# Migration 迁移：帮助你更快地迁移到框架新版本的模式
 
 # Correctness 正确性
 # 以下内容的实例可以在这里找到：https://docs.quantifiedcode.com/python-anti-patterns/correctness/index.html

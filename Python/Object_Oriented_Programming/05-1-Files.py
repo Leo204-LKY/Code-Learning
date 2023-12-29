@@ -152,7 +152,7 @@ inputFile.close()
 
 
 # Serialisation 序列化
-# 在内存中有一个 data structure 数据结构(data objects 数据对象)，你想将它保存在一个文件中，这样您就可以重新加载并使用它
+# 在内存中有一个 data structure 数据结构(data objects 数据对象)，你想将它保存在一个文件中，这样你就可以重新加载并使用它
 # Python Pickle模块
 # - 布尔值、整数、浮点数、复数、字符串、字节对象、字节数组和 None
 # - 列表、元组、字典和包含任何原生数据类型组合的集

@@ -112,7 +112,7 @@ JVM 提供了四种可供选择的 GC 实现：
 ### Overhead 开销  
 - 垃圾收集器会带来一些程序员无法控制的运行时开销  
     - 这可能会导致涉及大量线程或处理器的大型应用程序或占用大量内存的套接字出现性能问题  
-- 你可以使用 System.gc() 方法要求 JVM 在您的代码中运行 GC：  
+- 你可以使用 System.gc() 方法要求 JVM 在你的代码中运行 GC：  
   ```java
   class HelloWorld {
       public static void main(String[] args) {

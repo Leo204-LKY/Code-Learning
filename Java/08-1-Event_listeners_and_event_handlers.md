@@ -65,7 +65,7 @@ public class ButtonExample2 {
 - 点击复选框时会发生项目事件  
 - 要创建一个项目监听器对象，需要声明一个实现 ItemListener 接口的类或扩展一个实现 ItemListener 接口的类  
     - 项目事件发生时，程序会执行方法 `itemStateChanged(ItemEvent e)`  
-    - 您可以通过调用 ItemEvent 方法 `getStateChange()` 来测试项目是否已选中或取消选中，该方法可以是 `ItemEvent.SELECTED` 或 `ItemEvent.DESELECTED`  
+    - 你可以通过调用 ItemEvent 方法 `getStateChange()` 来测试项目是否已选中或取消选中，该方法可以是 `ItemEvent.SELECTED` 或 `ItemEvent.DESELECTED`  
     - 你可以使用 `getSource()` 方法获取事件源按钮  
 #### 使用项目监听器的复选框例  
 基于 [Day 7 Session 3 - 复选框：JCheckBox 类](07-3-Using_layouts_and_buttons_in_Swing.md#复选框jcheckbox-类) 中的示例代码  

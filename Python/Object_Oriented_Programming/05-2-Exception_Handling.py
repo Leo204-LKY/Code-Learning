@@ -16,7 +16,7 @@
 
 
 # Raising your own Exceptions 引发自己的异常
-# 正如我们在堆栈和队列中看到的，您也可以编写自己的异常
+# 正如我们在堆栈和队列中看到的，你也可以编写自己的异常
 # 导入需要的异常模块
 """ A file for exceptions"""
 class Empty(Exception):

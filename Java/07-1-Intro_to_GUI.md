@@ -60,7 +60,7 @@
     - 其他常用组件包括 JLabel（可包含静态文本或图像）和 JButton（实现可按下的按钮）等  
 #### 在 Codio 中运行 Swing  
 - 要使用图形用户界面运行 Java，底层平台必须支持图形用户界面  
-- 在 Codio 中，您可以使用虚拟桌面运行图形用户界面  
+- 在 Codio 中，你可以使用虚拟桌面运行图形用户界面  
     - 参阅[文档](https://docs.codio.com/common/develop/ide/boxes/installsw/gui.html)来安装  
     - 注意，在使用虚拟桌面之前，需要重新启动 Codio  
     - 然后就可以在 Codio 中打开“虚拟桌面”选项卡了  

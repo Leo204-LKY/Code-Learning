@@ -24,7 +24,7 @@
 ### Java 的批评  
 - 太详细  
     - 然而，更容易阅读！  
-    - 当您响应中断呼叫（outage call）时，或者当您需要维护和修补由早就离开的开发人员编写的代码时，额外的冗长可能是一个好处  
+    - 当你响应中断呼叫（outage call）时，或者当你需要维护和修补由早就离开的开发人员编写的代码时，额外的冗长可能是一个好处  
 - 变化缓慢  
     - 最近版本中出现的新语言功能是解决最常见的关于缺少功能的抱怨的重要一步  
 - 性能低  
@@ -64,7 +64,7 @@
     - 将其保存在辅助存储设备上  
       ![Secondary Storage](img/01-2-02-Secondary_Storage.png)  
 #### 阶段 1.2：编辑代码文件  
-- 您可以使用任意文本编辑器（Vim, Notepad, TextEdit等）编辑源代码文件  
+- 你可以使用任意文本编辑器（Vim、Notepad、TextEdit 等）编辑源代码文件  
 - 也可以使用集成开发环境（Integrated Development Environment, IDE）  
     - 提供支持软件开发过程的工具，如编辑器、定位逻辑错误的调试器等  
     - 最受欢迎的 IDE 包括：  
@@ -73,7 +73,7 @@
         - NetBeans (http://www.netbeans.org)   
 #### 阶段 2.1：编译 Java 程序  
 - 使用命令 `javac`（Java compiler，Java 编译器）将源代码编译为程序  
-- 要将源文件 `Welcome.java` 编译，你需要输入：  
+- 要将源文件 `Welcome.java` 编译，输入：  
   ```shell
   javac Welcome.java
   ```
@@ -89,7 +89,7 @@
 - ![Class loader](img/01-2-03-Class_loader.png)  
 #### 阶段 4：验证字节码  
 - 在加载类时，字节码验证器检查它们的字节码，以确保它们是有效的，并且没有违反 Java 的安全限制  
-    - Java 加强了强大的安全性，以确保 Java 程序不会破坏您的文件或系统（例如计算机病毒）  
+    - Java 加强了强大的安全性，以确保 Java 程序不会破坏你的文件或系统（例如计算机病毒）  
 - ![Bytecode Verifier](img/01-2-04-Bytecode_verifier.png)  
 #### 阶段 5.1：运行  
 - JVM 执行程序的字节码  
@@ -104,9 +104,9 @@
     2. 在执行过程中，字节码被翻译成实际执行程序的计算机的机器语言  
 
 ### 常见错误  
-- 当使用 `javac` 时，诸如 *“Bad command or filename”*（命令或文件名错误） 或 *“javac: command not found”* 之类的错误消息意味着您的 Java 软件安装没有正确完成  
+- 当使用 `javac` 时，诸如 *“Bad command or filename”*（命令或文件名错误） 或 *“javac: command not found”* 之类的错误消息意味着你的 Java 软件安装没有正确完成  
     - 问题通常出在 PATH 环境变量设置不正确；如果发生这种情况，请仔细查看安装说明  
-    - 在某些系统中，您需要在纠正 PATH 后重新启动计算机以使更改生效  
+    - 在某些系统中，你需要在纠正 PATH 后重新启动计算机以使更改生效  
 - 当使用 Java 运行 .class 文件时，会出现诸如 *“java.lang.NoClassDefFoundError”* 之类的错误消息，通常意味着没有正确设置 Java CLASSPATH 环境变量  
 
 ### Java CLASSPATH  

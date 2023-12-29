@@ -45,5 +45,5 @@ john = Student("John Cleese", 78)
 # - 其他参数是用于初始化对象的值
 # - 没有 return 语句
 # Python 参数并不一定需要 __init__() 方法 - 碰巧它非常有用(Python classes DO NOT REQUIRE an __init__() method - just so happens that it is very useful!)
-# 这个方法名称前后各有两个下划线，这是一个有助于防止 Python 的默认方法名称与您的方法名称冲突的约定
+# 这个方法名称前后各有两个下划线，这是一个有助于防止 Python 的默认方法名称与你的方法名称冲突的约定
 # 一个类中没有 __init__() ，包含一个参数的 __init__() 和包含个参数的 __init__() 都是有效的

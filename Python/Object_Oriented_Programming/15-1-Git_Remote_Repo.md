@@ -12,7 +12,7 @@
 ### 团队需要工作流（workflow）方法  
 当学生开始团队工作时，他们经常与远程工作发生争执。  
 - 经常克隆一个仓库，而不是向其中添加更多代码。  
-- 读取错误并在网络上查找，以便您了解如何修复和避免它们。  
+- 读取错误并在网络上查找，以便你了解如何修复和避免它们。  
 
 ### 本地和远程仓库需要保持同步  
 ![Local and remote need to be kept synced](img/15-1-01-Local_and_remote_need_to_be_kept_synced.png)  

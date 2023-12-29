@@ -15,7 +15,7 @@
 软件工程师应该使用模式吗？为什么？
 - 从头开始开发软件是昂贵的
 - 模式支持软件架构和设计的重用
-> …我可以告诉你如何制作一件衣服，通过指定剪刀穿过一块布的路线，根据切割的角度和长度。或者，我可以给你一个模式。阅读规范时，您将不知道正在构建什么，或者当您完成时是否构建了正确的东西。模式预示着产品:它是制造产品的规则，但在许多方面，它也是产品本身。  
+> …我可以告诉你如何制作一件衣服，通过指定剪刀穿过一块布的路线，根据切割的角度和长度。或者，我可以给你一个模式。阅读规范时，你将不知道正在构建什么，或者当你完成时是否构建了正确的东西。模式预示着产品：它是制造产品的规则，但在许多方面，它也是产品本身。  
 > ... I could tell you how to make a dress by specifying the route of a scissors through a piece of cloth in terms of angles and lengths of cut. Or, I could give you a pattern. Reading the specification, you would have no idea what was being built or if you had built the right thing when you were finished. The pattern foreshadows the product: it is the rule for making the thing, but it is also, in many respects, the thing itself.”  
 > *Jim ‘Cope’ Coplein, One of the founders of the 
 software pattern discipline; laid foundations of both 

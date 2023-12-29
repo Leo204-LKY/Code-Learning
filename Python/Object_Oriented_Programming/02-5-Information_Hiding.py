@@ -65,7 +65,7 @@ hasattr(my_car,'engine_size')
 
 
 # Build-In Members of Classes 类的内置成员
-# 类包含许多Python包含的方法和属性，即使您没有显式地定义它们
+# 类包含许多Python包含的方法和属性，即使你没有显式地定义它们
 # 所有内置 members 的名称前后都有双下划线
 #   e.g. __init__()  __doc__
 
