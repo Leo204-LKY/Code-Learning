@@ -1,7 +1,7 @@
 # JC2503 Web Application Development | Web 应用程序开发  
 # Day 1: Introduction  
 
-## Lecture 1.1 - 课程介绍  
+## Lecture 1.1: 课程介绍  
 ### 课程安排  
 - 理论课程 - 每周 4 次  
 - 实验课程 - 每周 4 次  
