@@ -162,23 +162,7 @@
 </div>
 ```
 效果：  
-<style>
-    .psDiv {
-        background-color: lightgray;
-        color: black;
-        padding: 30px;
-        width: 150px;
-    }
-
-    .psDiv:hover {
-        background-color: black;
-        color: yellow;
-    }
-</style>
-
-<div class="psDiv">
-    <p>I will change color when hovered.</p>
-</div>
+<img width=250 src="img/03-2-18-0-CSS_pseudo_class_example.png" alt="CSS pseudo class example">  
 
 ### 链接伪类  
 - 链接的样式通常使用链接伪类  
