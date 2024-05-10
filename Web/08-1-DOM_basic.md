@@ -93,7 +93,7 @@
 
   // add and event listener to the button element inside the div
   var buttonElement = document.getElementById("myButton");
-  buttonElement.addEventListener("clickk", function() {
+  buttonElement.addEventListener("click", function() {
       divElement.style.backgroundColor = "red";
   });
   ```
