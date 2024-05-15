@@ -73,13 +73,13 @@ async function run() {
         const query = { runtime: { $lt: 5 } };
         // 按照片名的字母顺序对电影进行排序，并且只显示片名
         const options = {
-            sort: {"title-1": 1},
+            sort: {"title": 1},
             projection: { _id: 0, title: 1 }
         };
         // 最后，使用查找方法运行查询，然后打印返回的影片
-        const cursor = movied.find(query, options);
+        const cursor = movies.find(query, options);
         // 如果没有找到电影，用户将收到通知
-        if ((await moves.countDocuments(query)) === 0) {
+        if ((await movies.countDocuments(query)) === 0) {
             console.log("No movies found!");
         }
         for await (const doc of cursor) {
