@@ -18,7 +18,7 @@
 - 不同的模式（pattern）适用于不同类型的应用  
     - 我们需要考虑我们的用例，并根据情况选择合适的模式（pattern）  
 - 我们将讨论三种常见模式（pattern）：*多态（polymorphic）模式*、*属性（attribute）模式*和*桶（bucket）模式*  
-- https://www.mongodb.com/blog/post/building-with-patterns-a-summary
+- https://www.mongodb.com/blog/post/building-with-patterns-a-summary  
   <img width=300 src="img/13-1-01-MongoDB_schema_design_patterns.png" alt="MongoDB schema design patterns">  
 
 #### 多态模式  
