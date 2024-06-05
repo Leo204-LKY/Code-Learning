@@ -301,6 +301,7 @@ document.getElementById("example").innerHTML = "Hello from javascript">
 #### 类型运算符  
 - 类型运算符用于确定值的数据类型  
 - | 运算符 | 描述 |
+  | --- | --- |
   | `typeof` | 返回一个变量的类型 |
   | `instanceof` | 如果对象是对象类型的实例，则返回 true |
 - ```js
@@ -324,7 +325,7 @@ document.getElementById("example").innerHTML = "Hello from javascript">
   | `^` | XOR 异或 | `5 ^ 1` | `0101 ^ 0001` | 0100 | 4 |
   | `<<` | 左移位 | `5 << 1` | `0101 << 1` | 1010 | 10 |
   | `>>` | 右移位 | `5 >> 1` | `0101 >> 1` | 1010 | 2 |
-  | `>>>` | 无符号右移位 | `5 >>> 1` | 0010 | 2 |
+  | `>>>` | 无符号右移位 | `5 >>> 1` | `0101 >>> 1` | 0010 | 2 |
 
 #### 运算符优先级  
 - 运算符优先级是 JavaScript 对表达式中的运算符进行求值的顺序  
