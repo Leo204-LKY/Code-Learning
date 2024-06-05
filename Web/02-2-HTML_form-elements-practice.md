@@ -197,8 +197,9 @@
     </aside>
 
     <footer>
-        <a href="http://abdn.ac.uk"> 
- Back to UoA website</a>
+        <a href="http://abdn.ac.uk">
+            Back to UoA website
+        </a>
     </footer>
 </article>
 ...
@@ -236,14 +237,14 @@
   ✅ <img src="image.jpg" alt="Image">
   ```
 - 属性的值未使用引号  
-```html
+  ```html
   ❌ <img src=image.jpg alt=Image>
   ✅ <img src="image.jpg" alt="Image">
   ```
 
 ### HTML 验证  
 - 一般来说，HTML 的宽容度很高  
-    - 有破损 HTML 代码的网页在您的浏览器中可能看起来是正确的  
+    - 有破损 HTML 代码的网页在你的浏览器中可能看起来是正确的  
     - 但在其他一些浏览器中看起来可能是错误的！  
 - 我们应努力编写有效的 HTML 代码，以确保我们的页面及其内容具有一致的表现形式和可访问性  
 - 我们应该使用验证器检查 HTML 代码  
