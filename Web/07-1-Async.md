@@ -82,42 +82,42 @@
 
 #### 异步函数例子  
 1. 程序运行前，调用栈和回调队列都是空的  
-  <img width=600 src="img/07-1-06-Synchronous_function_example_1.png" alt="Example of synchronous functions 1">  
+   <img width=600 src="img/07-1-06-Synchronous_function_example_1.png" alt="Example of synchronous functions 1">  
 2. 第 1 个函数进入调用栈并被执行；回调队列为空  
-  <img width=600 src="img/07-1-07-Synchronous_function_example_2.png" alt="Example of synchronous functions 2">  
+   <img width=600 src="img/07-1-07-Synchronous_function_example_2.png" alt="Example of synchronous functions 2">  
 3. 第 2 个函数进入调用栈并被执行；回调队列为空  
-  <img width=600 src="img/07-1-08-Synchronous_function_example_3.png" alt="Example of synchronous functions 3">  
+   <img width=600 src="img/07-1-08-Synchronous_function_example_3.png" alt="Example of synchronous functions 3">  
 4. 第 3 个函数进入调用栈并被执行；回调队列为空  
-  <img width=600 src="img/07-1-09-Synchronous_function_example_4.png" alt="Example of synchronous functions 4">  
+   <img width=600 src="img/07-1-09-Synchronous_function_example_4.png" alt="Example of synchronous functions 4">  
 5. 第 4 个函数进入调用栈并被执行；回调队列为空  
   <img width=600 src="img/07-1-10-Synchronous_function_example_5.png" alt="Example of synchronous functions 5">  
 6. 程序结束，调用栈和回调队列都是空的  
-  <img width=600 src="img/07-1-11-Synchronous_function_example_6.png" alt="Example of synchronous functions 6">  
+   <img width=600 src="img/07-1-11-Synchronous_function_example_6.png" alt="Example of synchronous functions 6">  
 - 注：在某些运行时实现中，`console.log()` 不会进入调用栈。这里是为简单起见  
 
 #### 同步函数例子  
 1. 程序运行前，调用栈和回调队列都是空的  
-  <img width=600 src="img/07-1-12-Asynchronous_function_example_1.png" alt="Example of asynchronous functions 1">  
+   <img width=600 src="img/07-1-12-Asynchronous_function_example_1.png" alt="Example of asynchronous functions 1">  
 2. 第 1 个函数进入调用栈并被执行；回调队列为空  
-  <img width=600 src="img/07-1-13-Asynchronous_function_example_2.png" alt="Example of asynchronous functions 2">  
+   <img width=600 src="img/07-1-13-Asynchronous_function_example_2.png" alt="Example of asynchronous functions 2">  
 3. 第 2 个函数进入调用栈并被执行；回调队列为空  
-  <img width=600 src="img/07-1-14-Asynchronous_function_example_3.png" alt="Example of asynchronous functions 3">  
+   <img width=600 src="img/07-1-14-Asynchronous_function_example_3.png" alt="Example of asynchronous functions 3">  
 4. 在 `addAsync` 中遇到了一个异步函数 `setTimeout`，它会在 2000 毫秒后调用一个匿名函数；匿名回调函数被推送到回调队列中  
-  <img width=600 src="img/07-1-15-Asynchronous_function_example_4.png" alt="Example of asynchronous functions 4">  
+   <img width=600 src="img/07-1-15-Asynchronous_function_example_4.png" alt="Example of asynchronous functions 4">  
 5. 第 3 个函数进入调用堆栈并被执行；回调队列有一个任务  
-  <img width=600 src="img/07-1-16-Asynchronous_function_example_5.png" alt="Example of asynchronous functions 5">  
+   <img width=600 src="img/07-1-16-Asynchronous_function_example_5.png" alt="Example of asynchronous functions 5">  
 6. 调用栈为空；回调队列不为空  
-  <img width=600 src="img/07-1-17-Asynchronous_function_example_6.png" alt="Example of asynchronous functions 6">  
+   <img width=600 src="img/07-1-17-Asynchronous_function_example_6.png" alt="Example of asynchronous functions 6">  
 7. 回调队列中的任务被移至调用栈；现在回调队列为空  
-  <img width=600 src="img/07-1-18-Asynchronous_function_example_7.png" alt="Example of asynchronous functions 7">  
+   <img width=600 src="img/07-1-18-Asynchronous_function_example_7.png" alt="Example of asynchronous functions 7">  
 8. 另一个匿名函数被添加到调用栈，因为它在第一个匿名函数中被调用；回调队列为空  
-  <img width=600 src="img/07-1-19-Asynchronous_function_example_8.png" alt="Example of asynchronous functions 8">  
+   <img width=600 src="img/07-1-19-Asynchronous_function_example_8.png" alt="Example of asynchronous functions 8">  
 9. 从调用栈执行 `callback(sum)`；回调队列为空  
-  <img width=600 src="img/07-1-20-Asynchronous_function_example_9.png" alt="Example of asynchronous functions 9">  
+   <img width=600 src="img/07-1-20-Asynchronous_function_example_9.png" alt="Example of asynchronous functions 9">  
 10. `setTimeout` 中的匿名函数被执行；回调队列为空  
-  <img width=600 src="img/07-1-21-Asynchronous_function_example_10.png" alt="Example of asynchronous functions 10">  
+   <img width=600 src="img/07-1-21-Asynchronous_function_example_10.png" alt="Example of asynchronous functions 10">  
 11. 程序结束，调用栈和回调队列都是空的  
-  <img width=600 src="img/07-1-22-Asynchronous_function_example_11.png" alt="Example of asynchronous functions 11">  
+   <img width=600 src="img/07-1-22-Asynchronous_function_example_11.png" alt="Example of asynchronous functions 11">  
 - 注：在某些运行时实现中，`console.log()` 不会进入调用栈。这里是为简单起见  
 
 #### 在线可视化工具  
