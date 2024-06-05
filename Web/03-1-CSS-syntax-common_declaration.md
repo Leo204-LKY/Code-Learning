@@ -221,7 +221,7 @@
 
 #### CSS 边框  
 - `border` 属性可用于定义边框的宽度、样式和颜色  
-    - 也可使用 borderwidth、border-style 和 border-color 属性分别设置宽度、样式和颜色  
+    - 也可使用 `border-width`、`border-style` 和 `border-color` 属性分别设置宽度、样式和颜色  
     - 此外，还可以为每一边分别设置不同的宽度、样式和颜色  
 - ```css
   #myBorder {
