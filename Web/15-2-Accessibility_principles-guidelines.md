@@ -30,7 +30,7 @@
     - 有意义图像的描述  
         - `alt` 属性可在用户无法查看图片时提供替代文本  
         - 好的描述性文字能说明图像及其意图  
-        - 撰写描述性文字的常用技巧是想象您正在通过电话向朋友解释图片的内容  
+        - 撰写描述性文字的常用技巧是想象你正在通过电话向朋友解释图片的内容  
         - ```html
           <img src="house.jpg" alt="Private house, modern architecture with straight lines. Minimalistic with a big garage">
           ```
