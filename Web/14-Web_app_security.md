@@ -191,7 +191,7 @@ console.log("Decrypted message: ", decryptedMessage);
 ### HTTP 与 HTTPS  
 - HTTPS 是 HTTP 的安全版本，采用 SSL/TLS 加密协议在客户端和服务器之间建立安全连接  
 - HTTPS 增加了一个额外的安全层，以保护通过网络传输的数据  
-- https://www.cloudflare.com/en-gb/learning/ssl/why-is-http-not-secure/
+- https://www.cloudflare.com/en-gb/learning/ssl/why-is-http-not-secure/  
   <img width=400 src="img/14-14-HTTP-HTTPS.png" alt="HTTP vs HTTPS">
 - **数据安全**  
     - **HTTP**：通过普通 HTTP 传输的数据未加密，这意味着攻击者可以截获并查看这些数据。这包括密码、个人信息和财务数据等敏感信息  
